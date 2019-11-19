@@ -1470,3 +1470,170 @@ pre.wp-block-verse {
 .page-section {
     padding-top: 20px;
 }
+
+.colour {
+    color: #db6a32;
+}
+
+a {
+    color: #db6a32;
+}
+
+a:hover {
+    color: #333;
+}
+
+::selection {
+    background: #db6a32;
+    color     : #fff;
+}
+
+::-moz-selection {
+    background: #db6a32;
+    color     : #fff;
+}
+
+blockquote {
+    border-left: 4px solid #db6a32 !important;
+}
+
+.btn,
+#ajax-contact-form2 input[type="submit"] {
+    background-color: #db6a32 !important;
+}
+
+.btn-inverse:hover {
+    background-color: #db6a32 !important;
+}
+
+#menu li a:hover,
+#menu a:focus,
+#menu a.active {
+    color           : #db6a32 !important;
+    background-color: transparent;
+}
+
+.colour-section {
+    color     : #f0f0f0 !important;
+    background: #db6a32 !important;
+}
+
+.colour-section .lead,
+.colour-section h1 {
+    color: #f0f0f0 !important;
+}
+
+.footer a {
+    color: #db6a32 !important;
+}
+
+.footer a:hover {
+    color: #999 !important;
+}
+
+/**** CIRCLE LINK ****/
+.circle {
+    background: #db6a32 !important;
+}
+
+.circle:hover {
+    background: #2e3138 !important;
+}
+
+/*  ---------------------------------------------------------------
+      SERVICE ICONS
+      --------------------------------------------------------------- */
+.service {
+    background: #db6a32 !important;
+}
+
+/*  ---------------------------------------------------------------
+      PROGRESS BARS/SKILL BARS
+      --------------------------------------------------------------- */
+.bars-wrapper .progress-bar {
+    background: #db6a32 !important;
+}
+
+/*  ---------------------------------------------------------------
+      TEAM ICONS
+      --------------------------------------------------------------- */
+.hi-icon2 {
+    color: #db6a32 !important;
+}
+
+.hi-icon-effect-a .hi-icon2 {
+    box-shadow: 0 0 0 3px #db6a32 !important;
+}
+
+.no-touch .hi-icon-effect-a1 .hi-icon2:hover {
+    color: #db6a32 !important;
+}
+
+.hi-icon-effect-a .hi-icon2:after {
+    background: #db6a32 !important;
+    color     : #db6a32 !important;
+}
+
+/*  ---------------------------------------------------------------
+       HOVER CAPTIONS ( TEAM - VIEW PROFILE + WORK - VIEW BUTTONS 
+      --------------------------------------------------------------- */
+.cbp-l-caption-buttonLeft:hover,
+.cbp-l-caption-buttonRight:hover {
+    color           : #fff !important;
+    background-color: #db6a32 !important;
+}
+
+/*  ---------------------------------------------------------------
+    PORTFOLIO FILTERS
+      --------------------------------------------------------------- */
+.cbp-l-filters-button .cbp-filter-item-active {
+    background-color: #db6a32 !important;
+    color           : #fff !important;
+}
+
+.cbp-l-filters-button .cbp-filter-counter {
+    background-color: #db6a32 !important;
+    color           : #fff !important;
+}
+
+.cbp-l-filters-button .cbp-filter-counter:before {
+    border-top: 4px solid #db6a32 !important;
+}
+
+.nav-tabs .active a,
+.nav-tabs a:hover,
+.nav-tabs .active a:focus {
+    background-color: #db6a32 !important;
+}
+
+.footer {
+    background: #2e3138;
+}
+
+.price .amt {
+    font-size  : 72px;
+    line-height: 62px;
+}
+
+.dollar {
+    font-size  : 22px;
+    font-weight: 300;
+    line-height: 22px;
+    position   : relative;
+    right      : 3px;
+    top        : 0;
+}
+
+.price .amt {
+    font-size  : 110px;
+    line-height: 84px;
+    display    : none;
+}
+
+.owl-item {
+    color      : #666;
+    font-family: "Raleway", sans-serif;
+    font-size  : 20px;
+    font-weight: 300;
+    line-height: 27px;
+}
