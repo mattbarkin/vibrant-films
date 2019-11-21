@@ -12,7 +12,7 @@ publish_mode: editorial_workflow # Enable drafts
 collections:
   - name: "page"
     label: "Page"
-    folder: "_data/_pages"
+    folder: "pages"
     sort: "title:asc"
     create: true
     slug: "{{slug}}"
@@ -35,7 +35,7 @@ collections:
       - { label: "Body", name: "body", widget: "markdown", required: false }
   - name: "work"
     label: "Work"
-    folder: "_data/_work"
+    folder: "collections/_work"
     sort: "title:asc"
     create: true
     slug: "{{slug}}"
