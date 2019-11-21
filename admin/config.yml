@@ -45,15 +45,39 @@ collections: # A list of collections the CMS should be able to edit
           widget: "string",
           required: false,
         }
-  - name: "work"
-    label: "Work"
-    folder: "_work"
+    # PAGES
+  - name: "page"
+    label: "Page"
+    folder: "pages"
     sort: "title:asc"
     create: true
     slug: "{{slug}}"
     fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
       - { label: "Title", name: "title", widget: "string", tagname: "h1" }
-      - { label: "Vimeo Permalink", name: "permalink", widget: "string" }
+      - { label: "Permalink", name: "permalink", widget: "hidden" }
+      - {
+          label: "Section",
+          name: "section",
+          widget: "hidden",
+          default: "{{name}}",
+        }
+      - {
+          label: "Intro Paragraph",
+          name: "intro_paragraph",
+          widget: "markdown",
+          required: false,
+        }
+      - { label: "Body", name: "body", widget: "markdown", required: false }
+  - name: "work"
+    label: "Work"
+    folder: "work"
+    sort: "title:asc"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string", tagname: "h1" }
+      - { label: "Vimeo Permalink", name: "permalink", widget: "hidden" }
       - {
           label: "Thumbnail Image",
           name: "thumbnailImage",
