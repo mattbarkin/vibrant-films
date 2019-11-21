@@ -34,6 +34,7 @@ collections:
       - {
           label: "Thumbnail Image",
           name: "thumbnailImage",
+          description: "must be 480x360"
           widget: "image",
           default: "/assets/img/uploads/default-thumbnail.jpg",
         }
