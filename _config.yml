@@ -74,4 +74,5 @@ exclude:
 
 collections:
   work:
-    output: true
+    output: false
+collections_dir: _data/

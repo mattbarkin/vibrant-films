@@ -2,21 +2,19 @@
     <div class="row">
         <div class="col-sm-12">
             <h1 class="wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">contact</h1>
-            <div class="lead wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">Communication
-                is <strong>vital</strong> to the creative development of any project. Don’t hesitate to
-                contact us:</div>
+            <div class="lead wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">{{ site.data.content.contactText | markdownify }}</div>
         </div>
         <div id="aq-block-1779-24" class="aq-block aq-block-aq_ebor_text_block col-sm-6 aq-first ">
-            <p>Vibrant Films<br>
-                180 Capp St #4<br>
-                San Francisco, CA, 94110<br>
+            <p>{{ site.data.content.address1}}<br>
+                {{ site.data.content.address2}}<br>
+                {{ site.data.content.address3}}<br>
 
             </p>
 
             <ul class="fa-ul">
-                <li><i class="fa-li fa fa-phone inverse"></i> <span class="inverse">+1 (951) 236-0557</span>
+                <li><i class="fa-li fa fa-phone inverse"></i> <span class="inverse">{{ site.data.content.phone}}</span>
                 </li>
-                <li><i class="fa-li fa fa-envelope inverse"></i> <a href="mailto:#">matt@vibrantfilms.com</a>
+                <li><i class="fa-li fa fa-envelope inverse"></i> <a href="mailto:#">{{ site.data.content.email}}</a>
                 </li>
 
             </ul>

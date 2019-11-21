@@ -1,80 +1,18 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-12">
-            <h1 class="wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">who we are</h1>
-            <div class="lead wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s"><strong><span
-                        class="colour">Vibrant Films</span></strong> is a creative video production company
-                located in <strong>San Francisco</strong>. We are a closely knit team of award winning
-                cinematographers, animators, and other creatives who live to tell stories. From concept
-                development to mixing and mastering, we are prepared to do what it takes to make your ideas
-                a reality. </div>
+            <h1 class="wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">{{ site.data.content.whoWeAreTitle }}</h1>
+            <div class="lead wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">{{ site.data.content.whoWeAreSubTitle | markdownify }}</div>
         </div>
         <div id="aq-block-1779-12" class="aq-block aq-block-aq_testimonial_carousel_block col-sm-12 aq-first ">
             <div class="testimonials owl-carousel thin text-center lead">
-
-
-                <div class="item">
-                    “Within a week of launching our crowd-funding campaign, we reached 500K video views,
-                    landed in major tech blogs and reached our funding goal. The pitch video is the key
-                    element of any funding campaign and we attribute much of our success to the quality of
-                    the video that Vibrant delivered. The Vibrant team is professional, passionate and were
-                    involved throughout the process. They helped us storyboard our ideas and provided great
-                    guidance and direction during the video shoot. Finally their attention to small details
-                    in  post-production really allowed our product to shine.”<small>Yashar Behzadi-
-                        Co-Founder of Popslate</small>
-                </div>
-
-
-                <div class="item">
-                    “We’ve used Vibrant Films to record our annual Blessing of the Grapes, grape stomping at
-                    the winery and Miljenko “Mike” Grgich addressing the crowd and we loved the results. We
-                    found them easy to work with and able to quickly edit and turn around projects, all
-                    under budget. Thanks guys!”<small>Ken Moris – Grgich Hills Estate</small>
-                </div>
-
-
-                <div class="item">
-                    “Sam Sarraf is a visual genius. He was able to capture every element of my concepts in
-                    vibrant and relevant color. His artwork is timeless. I would highly recommend him to
-                    anyone.”<small>Jay Erickson – CEO of MyCityLender</small>
-                </div>
-
-
-                <div class="item">
-                    “Adam Ducharme will never let you down. Not only is he a relentless worker, he is always
-                    striving to deliver a better creation. He treats all his work as if it was his own and
-                    he’s always looking for the best solution to suit your needs and to take it beyond what
-                    you imagined. He was trained by the best in the business and therefore knows how to
-                    combine creativity, work ethic, and professionalism. And last but not least, he is a
-                    pleasure to work with.”<small>Melissa Baldino – Executive Producer at America’s Test
-                        Kitchen</small>
-                </div>
-
-
-                <div class="item">
-                    “We were extremely lucky to have Vibrant Films produce the promotional video for us. 
-                    When we first got in contact, the Thought Market was still only an idea given some
-                    serious discussion and it changed almost daily.  But Matt and Adam were able to take
-                    what was little more than a vague story and script and turn it into a powerful video
-                    that represents the business in an inspiring manner.”<small>Benjamin Burger – Founder of
-                        Thought Market</small>
-                </div>
-
-
-                <div class="item">
-                    “We have worked with Vibrant Films to produce a video for our fundraising events for the
-                    past two years. There are no words to describe how easy they are to work with and how
-                    professional and creative their entire team is. Along with how much we enjoy working
-                    with them – their work is top notch! Our last two events raised a record amount of money
-                    for our organization and I wholeheartedly believe that is due to the amazing video they
-                    produced. They told our clients stories in a humanizing and compassionate way. I am
-                    looking forward to producing our next video with them!”<small>Michelle Hudson – VP of
-                        Development at Walden House</small>
-                </div>
-
-
+                <div class="item">{{ site.data.content.slide1 | markdownify }}</div>
+                <div class="item">{{ site.data.content.slide2 | markdownify }}</div>
+                <div class="item">{{ site.data.content.slide3 | markdownify }}</div>
+                <div class="item">{{ site.data.content.slide4 | markdownify }}</div>
+                <div class="item">{{ site.data.content.slide5 | markdownify }}</div>
+                <div class="item">{{ site.data.content.slide6 | markdownify }}</div>
             </div>
-
         </div>
     </div>
 </div>
