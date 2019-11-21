@@ -21,7 +21,7 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "destination"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Date", name: "date", widget: "datetime", format: "YYYY-MM"}
-      - {label: "Featured Image", name: "featuredImage", widget: "image", default: "/assets/img/uploads/morocco.jpg" 
+      - {label: "Featured Image", name: "featuredImage", widget: "image", default: "/assets/img/uploads/morocco.jpg"}
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Places", name: "places", widget: "map", required: false}
       - {label: "Carly's take", name: "carlyTake", widget: "markdown", required: false}
@@ -31,13 +31,9 @@ collections:
           config:
             multiple: true
         }
-    # PAGES
   - name: "work"
-    title: "work"
     label: "work"
     folder: "_work"
-    sort: "title:asc"
-    collection: "work"
     create: true
     slug: "{{slug}}"
     fields:
