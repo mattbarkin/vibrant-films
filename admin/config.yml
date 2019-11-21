@@ -47,160 +47,44 @@ collections:
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Intro, name: intro, widget: string }
+          - { label: "Work Title", name: "workTitle", widget: "string" }
+          - { label: "Work Subtitle", name: "workSubTitle", widget: "string" }
+          - { label: "What We Do", name: "whatWeDoTitle", widget: "string" }
           - {
-              label: "Background Image SlideShow 1",
-              name: "bgSlideImage1",
-              widget: "image",
-            }
-          - {
-              label: "Background Image SlideShow 2",
-              name: "bgSlideImage2",
-              widget: "image",
-            }
-          - {
-              label: "Background Image SlideShow 3",
-              name: "bgSlideImage3",
-              widget: "image",
-            }
-          - {
-              label: "Background Image MOBILE",
-              name: "bgMobile",
-              widget: "image",
-            }
-          - { label: "Featured Image", name: "featuredImage", widget: "image" }
-          - { label: "Featured Title", name: "featuredTitle", widget: "string" }
-          - { label: "Featured Text", name: "featuredText", widget: "string" }
-          - { label: "Featured Url", name: "featuredUrl", widget: "string" }
-          - { label: "Our Projects", name: ourProjects, widget: markdown }
-          - {
-              label: "Our Project Image",
-              name: "ourProjectsImage",
-              widget: "image",
-            }
-          - { label: "Our Projects", name: ourProjectsUrl, widget: string }
-          - { label: "Our Projects", name: ourProjectsText, widget: string }
-          - {
-              label: Sustainable Building,
-              name: sustainableBuilding,
-              widget: markdown,
-            }
-          - { label: "Collage Image 1", name: "collage1", widget: "image" }
-          - {
-              label: "Collage Image 1 Caption",
-              name: collage1text,
-              widget: string,
-            }
-          - { label: "Collage Image 1 URL", name: collage1url, widget: string }
-          - { label: "Collage Image 2", name: "collage2", widget: "image" }
-          - {
-              label: "Collage Image 2 Caption",
-              name: collage2text,
-              widget: string,
-            }
-          - { label: "Collage Image 2 URL", name: collage2url, widget: string }
-          - { label: "Collage Image 3", name: "collage3", widget: "image" }
-          - {
-              label: "Collage Image 3 Caption",
-              name: collage3text,
-              widget: string,
-            }
-          - { label: "Collage Image 3 URL", name: collage3url, widget: string }
-          - {
-              label: "Sustainable Image",
-              name: "sustainableImage",
-              widget: "image",
-            }
-          - {
-              label: "Sustainable Url",
-              name: "sustainableUrl",
+              label: "What We Do Subtitle",
+              name: "whatWeDoSubTitle",
               widget: "string",
             }
           - {
-              label: "Sustainable Text",
-              name: "sustainableText",
+              label: "Who We Are Title",
+              name: "whoWeAreTitle",
               widget: "string",
             }
-          - { label: "Wide Image", name: "wideImage", widget: "image" }
           - {
-              label: "Wide Image Caption",
-              name: "wideImageCaption",
+              label: "Who We Are Subtitle",
+              name: "whoWeAreSubTitle",
               widget: "string",
             }
-          - { label: "Wide Image Url", name: "wideImageUrl", widget: "string" }
-          - { label: "Our Process", name: ourProcess, widget: markdown }
-          - { label: About Us, name: aboutUs, widget: markdown }
+          - { label: "Slideshow Text 1", name: slide1, widget: markdown }
+          - { label: "Slideshow Text 2", name: slide2, widget: markdown }
+          - { label: "Slideshow Text 3", name: slide3, widget: markdown }
+          - { label: "Slideshow Text 4", name: slide4, widget: markdown }
+          - { label: "Slideshow Text 5", name: slide5, widget: markdown }
+          - { label: "Slideshow Text 6", name: slide6, widget: markdown }
+          - { label: "Separator Text", name: "SeparatorText", widget: "string" }
           - {
-              label: "Our Process Image 1",
-              name: "aboutUsImageCollage1",
-              widget: "image",
+              label: "Equipment Rentals Title",
+              name: "equipmentRentalsTitle",
+              widget: "string",
             }
           - {
-              label: "Our Process Image 1 Caption",
-              name: aboutUsImage1CollageCaption,
-              widget: string,
+              label: "Equipment Rentals SubTitle",
+              name: "equipmentRentalsSubTitle",
+              widget: "string",
             }
-          - {
-              label: "Our Process Image 1 URL",
-              name: aboutUsImage1CollageUrl,
-              widget: string,
-            }
-          - {
-              label: "Our Process Image 2",
-              name: "aboutUsImageCollage2",
-              widget: "image",
-            }
-          - {
-              label: "Our Process Image 2 Caption",
-              name: aboutUsImage2CollageCaption,
-              widget: string,
-            }
-          - {
-              label: "Our Process Image 2 URL",
-              name: aboutUsImage2CollageUrl,
-              widget: string,
-            }
-          - {
-              label: "Our Process Image 3",
-              name: "aboutUsImageCollage3",
-              widget: "image",
-            }
-          - {
-              label: "Our Process Image 3 Caption",
-              name: aboutUsImage3CollageCaption,
-              widget: string,
-            }
-          - {
-              label: "Our Process Image 3 URL",
-              name: aboutUsImage3CollageUrl,
-              widget: string,
-            }
-          - {
-              label: "About Us Image 1",
-              name: "aboutUsImage2",
-              widget: "image",
-            }
-          - {
-              label: "About Us Image 1 Caption",
-              name: aboutUsImage2Caption,
-              widget: string,
-            }
-          - {
-              label: "About Us Image 1 Url",
-              name: aboutUsImage2Url,
-              widget: string,
-            }
-          - {
-              label: "About Us Image 2",
-              name: "aboutUsImage3",
-              widget: "image",
-            }
-          - {
-              label: "About Us Image 2 Caption",
-              name: aboutUsImage3Caption,
-              widget: string,
-            }
-          - {
-              label: "About Us Image 2 Url",
-              name: aboutUsImage3Url,
-              widget: string,
-            }
+          - { label: "Contact text", name: "contactText", widget: "string" }
+          - { label: "Address line 1", name: "address1", widget: "string" }
+          - { label: "Address line 2", name: "address2", widget: "string" }
+          - { label: "Address line 3", name: "address3", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
