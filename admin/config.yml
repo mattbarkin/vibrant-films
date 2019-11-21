@@ -78,4 +78,9 @@ collections: # A list of collections the CMS should be able to edit
     fields:
       - { label: "Title", name: "title", widget: "string", tagname: "h1" }
       - { label: "Vimeo Permalink", name: "permalink", widget: "hidden" }
-      - { label: "Thumbnail Image", name: "thumbnailImage", widget: "image", default: "/assets/img/uploads/default-thumbnail.jpg" 
+      - {
+          label: "Thumbnail Image",
+          name: "thumbnailImage",
+          widget: "image",
+          default: "/assets/img/uploads/default-thumbnail.jpg",
+        }
