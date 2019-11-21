@@ -1044,22 +1044,22 @@ p {
 /*--------------------------------*/
 /*	CONTACT FORM
 /*--------------------------------*/
-.wpcf7 {
+.contact-form {
 	margin-top:30px;
 }
-.wpcf7 input[type="submit"] {
+.contact-form input[type="submit"] {
 	width: auto;
 }
-.wpcf7 textarea {
+.contact-form textarea {
 	height:135px!important;
 }
-.wpcf7 input[type="text"],
-.wpcf7 input[type="text"],
-.wpcf7 input[type="name"],
-.wpcf7 input[type="email"],
-.wpcf7 input[type="tel"],
-.wpcf7 input[type="password"], 
-.wpcf7 textarea {
+.contact-form input[type="text"],
+.contact-form input[type="text"],
+.contact-form input[type="name"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form input[type="password"], 
+.contact-form textarea {
 	background: transparent;
 	color: #f0f0f0!important;
 	background:rgba(255, 255, 255, .2);
@@ -1099,14 +1099,14 @@ focus::-webkit-input-placeholder {
 	color:transparent;
 	opacity:1.0;
 }
-.wpcf7 input:focus, .wpcf7 textarea:focus {
+.contact-form input:focus, .contact-form textarea:focus {
 	color:#f0f0f0;
 	outline:none;
 }
 input {
 	outline:none;
 }
-.wpcf7 input[type="submit"] {
+.contact-form input[type="submit"] {
 	padding: 15px 25px;
 	background-color: #2E3138!important;
 	color: #f0f0f0;
@@ -1123,7 +1123,7 @@ input {
 	margin-bottom: 15px;
 	border: 0px none;
 }
-.wpcf7 input[type="submit"]:hover {
+.contact-form input[type="submit"]:hover {
 	background-color: #f0f0f0!important;
 	cursor: pointer;
 	color: #222!important;
