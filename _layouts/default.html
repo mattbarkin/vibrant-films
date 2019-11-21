@@ -11,6 +11,14 @@
 	</div>
 	{{ site.collections }}
 
+	{% for destination in site.destination %}
+	<a href="{{ destination.url }}">
+	<li class="destination--item" style="background-image:url({{destination.featuredImage}})">
+	  {{ destination.title }}
+	</li>
+  </a>
+  {% endfor %}
+
 	<section id="work" class="page-section light-wrapper">
 		{% include work.html %}
 	</section>

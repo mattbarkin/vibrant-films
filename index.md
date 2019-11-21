@@ -1,5 +1,5 @@
 ---
 layout: home
-title: Welcome
+title: 'Vibrant Films San Francisco | Vibrant Films Creative Film Agency : San Francisco'
 permalink: /
 ---

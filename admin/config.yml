@@ -1,6 +1,3 @@
-# Everything you need to know about configuring the CMS can be found here:-
-# https://www.netlifycms.org/docs/configuration-options/
-
 backend:
   name: git-gateway # Netlify’s Git Gateway connects to Git provider’s API
   branch: master # Branch to update (master by default)
@@ -52,7 +49,7 @@ collections:
           required: false,
         }
   - name: "work"
-    label: "work"
+    label: "Work"
     folder: "_work"
     create: true
     slug: "{{slug}}"
