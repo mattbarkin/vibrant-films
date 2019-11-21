@@ -49,11 +49,11 @@ collections: # A list of collections the CMS should be able to edit
     label: "Work"
     folder: "_work"
     sort: "title:asc"
-    create: false
+    create: true
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string", tagname: "h1" }
-      - { label: "Vimeo Permalink", name: "permalink", widget: "hidden" }
+      - { label: "Vimeo Permalink", name: "permalink", widget: "string" }
       - {
           label: "Thumbnail Image",
           name: "thumbnailImage",
