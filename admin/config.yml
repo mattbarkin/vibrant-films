@@ -18,18 +18,38 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{slug}}"
     fields: # The fields each document in this collection have
-      - {label: "Layout", name: "layout", widget: "hidden", default: "destination"}
-      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Date", name: "date", widget: "datetime", format: "YYYY-MM"}
-      - {label: "Featured Image", name: "featuredImage", widget: "image", default: "/assets/img/uploads/morocco.jpg"}
-      - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
-      - {label: "Places", name: "places", widget: "map", required: false}
-      - {label: "Carly's take", name: "carlyTake", widget: "markdown", required: false}
-      - {label: "Nico's take", name: "nicoTake", widget: "markdown", required: false}
-      - {label: "Gallery", name: "gallery", widget: "image", default: "/uploads/chocolate-dogecoin.jpg" 
-        media_library:
-          config:
-            multiple: true
+      - {
+          label: "Layout",
+          name: "layout",
+          widget: "hidden",
+          default: "destination",
+        }
+      - { label: "Title", name: "title", widget: "string", tagname: "h1" }
+      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM" }
+      - {
+          label: "Featured Image",
+          name: "featuredImage",
+          widget: "image",
+          default: "/assets/img/uploads/morocco.jpg",
+        }
+      - {
+          label: "Intro Paragraph",
+          name: "intro_paragraph",
+          widget: "markdown",
+          required: false,
+        }
+      - { label: "Places", name: "places", widget: "map", required: false }
+      - {
+          label: "Carly's take",
+          name: "carlyTake",
+          widget: "markdown",
+          required: false,
+        }
+      - {
+          label: "Nico's take",
+          name: "nicoTake",
+          widget: "markdown",
+          required: false,
         }
   - name: "work"
     label: "work"
