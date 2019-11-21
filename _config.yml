@@ -75,4 +75,3 @@ exclude:
 collections:
   work:
     output: true
-collections_dir: _data/
