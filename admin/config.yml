@@ -77,7 +77,14 @@ collections: # A list of collections the CMS should be able to edit
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string", tagname: "h1" }
-      - { label: "Vimeo Permalink", name: "permalink", widget: "hidden" }
+      - { label: "Vimeo Permalink", name: "permalink", widget: "string" }
+      - {
+          label: "Tag",
+          name: "tag",
+          widget: "select",
+          options:
+            ["advertisement", "corporate", "profile-documentary", "reel"],
+        }
       - {
           label: "Thumbnail Image",
           name: "thumbnailImage",
