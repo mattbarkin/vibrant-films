@@ -71,7 +71,7 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Body", name: "body", widget: "markdown", required: false }
   - name: "work"
     label: "Work"
-    folder: "work"
+    folder: "_work"
     sort: "title:asc"
     create: false
     slug: "{{slug}}"
