@@ -73,7 +73,7 @@ collections: # A list of collections the CMS should be able to edit
     label: "Work"
     folder: "_work"
     sort: "title:asc"
-    create: false
+    create: true
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string", tagname: "h1" }
