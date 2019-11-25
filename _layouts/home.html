@@ -1,23 +1,32 @@
 ---
 layout: default
 ---
+<div id="aq-block-1793-1" class="aq-block aq-block-aq_header_block col-sm-12 aq-first ">
+  {% include video-landing.html %}
+</div>
 
-<h2>{{ page.title }}</h2>
+<section id="work" class="page-section light-wrapper">
+  {% include work.html %}
+</section>
 
-  {% include page-intro.html %}
+<section id="what-we-do" class="page-section light-wrapper">
+  {% include what-we-do.html %}
+</section>
 
-  {{ content }}
+<section id="who-we-are" class="page-section light-wrapper">
+  {% include who-we-are.html %}
+</section>
 
-  <section>
+<section id="matt" class="parallax">
+  {% include separator-photo.html %}
+</section>
 
-    <h3>Recent posts from the blog</h3>
+<section id="equipment-rentals" class="page-section light-wrapper">
+  {% include equipment-rentals.html %}
+</section>
 
-    <ul>
-      {% for post in site.posts limit:3 %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
+{% include separator-video.html %}
 
-  </section>
+<section id="blog" class="page-section light-wrapper">
+  {% include blog.html %}
+</section>

@@ -75,4 +75,11 @@ exclude:
 collections:
   work:
     output: false
-collections_dir: _data/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      section: "post"

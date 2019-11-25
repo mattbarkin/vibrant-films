@@ -6,35 +6,7 @@
 
 	{% include header.html %}
 
-	<div id="aq-block-1793-1" class="aq-block aq-block-aq_header_block col-sm-12 aq-first ">
-		{% include video-landing.html %}
-	</div>
-
-	<section id="work" class="page-section light-wrapper">
-		{% include work.html %}
-	</section>
-
-	<section id="what-we-do" class="page-section light-wrapper">
-		{% include what-we-do.html %}
-	</section>
-
-	<section id="who-we-are" class="page-section light-wrapper">
-		{% include who-we-are.html %}
-	</section>
-
-	<section id="matt" class="parallax">
-		{% include separator-photo.html %}
-	</section>
-
-	<section id="equipment-rentals" class="page-section light-wrapper">
-		{% include equipment-rentals.html %}
-	</section>
-
-	{% include separator-video.html %}
-
-	<section id="blog" class="page-section light-wrapper">
-		{% include blog.html %}
-	</section>
+	{{ content }}
 
 	<section id="contact" class="page-section colour-section">
 		{% include contact.html %}
