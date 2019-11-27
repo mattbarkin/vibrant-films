@@ -1,11 +1,9 @@
 ---
 layout: post
 title: Pearl Izumi Mini Doc
-author: dan_urbanowicz
+author: matt_barkin
 date: "2019-09-09 12:00:00"
 categories: misc
 ---
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+In the summer of 2019 Vibrant Films documented a tri-athlete learning how to mountain bike with support from the Pearl iZumi cycling brand. Watch what happens when she pushes herself to learn such a fun, dangerous, sport!

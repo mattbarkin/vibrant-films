@@ -10,192 +10,23 @@ layout: default
       {% include intro-blog.html %}
 
       <div class="row">
-
         <div class="pad30"></div>
-
         <div class="col-md-8">
 
           <section>
-            <ul>
-              {% for post in site.posts limit:3 %}
-              <li>
-                <a href="{{ post.url }}">{{ post.title }}</a>
-              </li>
-              {% endfor %}
-            </ul>
+            {% for post in site.posts %}
+            <article class="post">
+              <h1 class="blog-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+              <h6><time datetime="{{ post.date }}">{{ post.date | date_to_string }}</time> -
+                <a href="#" rel="category tag">Uncategorized</a>
+              </h6>
+              <p>{{ post.excerpt | strip_newlines | truncate: 260 }}</p>
+              <a href="{{ post.url }}">read more</a> &rarr;
 
-            <h3>Posts</h3>
-
-            <ul>
-              {% for post in site.posts %}
-              {% assign author = site.data.authors[post.author] %}
-              <li>
-                <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-                <time datetime="{{ post.date }}">
-                  <small>
-                    <strong>{{ post.date | date_to_string }}</strong>
-                    {% if author %}
-                    by {{ author.name }}
-                    {% endif %}
-                  </small>
-                </time>
-                {{ post.excerpt | strip_newlines | truncate: 180 }}
-              </li>
-              {% endfor %}
-            </ul>
-
+              <div class="pad45"></div>
+            </article>
+            {% endfor %}
           </section>
-
-          <div id="post-2646"
-            class="post-2646 post type-post status-publish format-standard hentry category-uncategorized">
-
-            <h1 class="blog-title"><a href="../pearl-izumi-mini-doc/index.html">Pearl iZumi Mini Doc</a></h1>
-            <h6>September 9, 2019 - <a href="../category/uncategorized/index.html" rel="category tag">Uncategorized</a>
-            </h6>
-            <p>In the summer of 2019 Vibrant Films documented a tri-athlete learning how to mountain bike with support
-              from the Pearl iZumi cycling brand. Watch what happens when she pushes herself to learn such a fun,
-              dangerous, sport!</p>
-
-            <a href="../pearl-izumi-mini-doc/index.html">read more</a> &rarr;
-
-            <div class="pad45"></div>
-
-          </div>
-          <div id="post-2631"
-            class="post-2631 post type-post status-publish format-standard hentry category-uncategorized">
-
-            <h1 class="blog-title"><a href="../made-in-mexico-premiere/index.html">Made in Mexico Premiere</a></h1>
-            <h6>June 18, 2019 - <a href="../category/uncategorized/index.html" rel="category tag">Uncategorized</a></h6>
-            <p>Our short documentary premiered in SF, LA, and London this June! Made In Mexico follows fashion activist
-              Amanda Hearst and design students as they get to know Reina, Oliva and other fierce women behind our fast
-              fashion labels. Vibrant Films made this short documentary with&#8230;</p>
-
-            <a href="../made-in-mexico-premiere/index.html">read more</a> &rarr;
-
-            <div class="pad45"></div>
-
-          </div>
-          <div id="post-2598"
-            class="post-2598 post type-post status-publish format-standard hentry category-uncategorized">
-
-            <h1 class="blog-title"><a href="../mexico/index.html">Made in Mexico</a></h1>
-            <h6>December 10, 2018 - <a href="../category/uncategorized/index.html" rel="category tag">Uncategorized</a>
-            </h6>
-            <p>We are proud to announce that our new film &#8220;Made in Mexico&#8221; in collaboration with
-              remake.world will be coming out this spring! In September 2018 Remake and Vibrant went to Mexico with CCA
-              students and Amanda Hearst to listen to the stories of the garment workers&#8230;</p>
-
-            <a href="../mexico/index.html">read more</a> &rarr;
-
-            <div class="pad45"></div>
-
-          </div>
-          <div id="post-2591"
-            class="post-2591 post type-post status-publish format-standard hentry category-uncategorized">
-
-            <h1 class="blog-title"><a href="../call-frisco-roku/index.html">Don&#8217;t Call it Frisco is now on
-                Roku!</a></h1>
-            <h6>October 29, 2018 - <a href="../category/uncategorized/index.html" rel="category tag">Uncategorized</a>
-            </h6>
-            <p>DCF, our award winning comedy web series, Is now on streaming on Roku on ZPTV! Add ZPTV to your Roku
-              device or Roku powered smart TV and buckle up! Rewatching it is even better than the first time!</p>
-
-            <a href="../call-frisco-roku/index.html">read more</a> &rarr;
-
-            <div class="pad45"></div>
-
-          </div>
-          <div id="post-2579"
-            class="post-2579 post type-post status-publish format-standard hentry category-uncategorized">
-
-            <h1 class="blog-title"><a href="../call-frisco-season-2-premiere/index.html">Don&#8217;t Call it Frisco
-                Season 2 premiere!</a></h1>
-            <h6>August 29, 2018 - <a href="../category/uncategorized/index.html" rel="category tag">Uncategorized</a>
-            </h6>
-            <p>On Sunday August 19th Vibrant Films released Season 2 of Don&#8217;t Call it Frisco! Don&#8217;t call it
-              frisco is a comedy web series that follows Pat, a square new englander whose life goes to hell after he
-              moves to SF. Here&#8217;s a link to the&#8230;</p>
-
-            <a href="../call-frisco-season-2-premiere/index.html">read more</a> &rarr;
-
-            <div class="pad45"></div>
-
-          </div>
-          <div id="post-2573"
-            class="post-2573 post type-post status-publish format-image hentry category-uncategorized post_format-post-format-image">
-
-            <h1 class="blog-title"><a href="../kaiser-team-picnic-spot/index.html">Kaiser Team Picnic Spot</a></h1>
-            <h6>August 13, 2018 - <a href="../category/uncategorized/index.html" rel="category tag">Uncategorized</a>
-            </h6>
-            <p>&nbsp; Sneak peak from our upcoming comedic spot for Kaiser Permanente. The Team picnic!</p>
-
-            <a href="../kaiser-team-picnic-spot/index.html">read more</a> &rarr;
-
-            <div class="pad45"></div>
-
-          </div>
-          <div id="post-2566"
-            class="post-2566 post type-post status-publish format-video hentry category-uncategorized post_format-post-format-video">
-
-            <div class="vendor"><iframe title="Made In Sri Lanka"
-                src="https://player.vimeo.com/video/269288158?dnt=1&amp;app_id=122963" width="500" height="281"
-                frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
-            <h1 class="blog-title"><a href="../sri-lanka-documentary-launch/index.html">Made in Sri Lanka documentary
-                launch</a></h1>
-            <h6>May 17, 2018 - <a href="../category/uncategorized/index.html" rel="category tag">Uncategorized</a></h6>
-            <p>In 2017 we collaborated with remake.world on their 8th learning journey that took aspiring fashion
-              designers from Parsons School of Design and California College of the Arts to Sri Lanka to uncover the
-              human cost behind mass production. Through intimate conversations with women who make&#8230;</p>
-
-            <a href="../sri-lanka-documentary-launch/index.html">read more</a> &rarr;
-
-            <div class="pad45"></div>
-
-          </div>
-          <div id="post-2449"
-            class="post-2449 post type-post status-publish format-standard hentry category-vibrant-films-production-news">
-
-            <h1 class="blog-title"><a href="../wrap/index.html">That&#8217;s a Wrap!</a></h1>
-            <h6>May 3, 2018 - <a href="../category/vibrant-films-production-news/index.html" rel="category tag">Vibrant
-                Films production news</a></h6>
-            <p>Chad and Rory setup for the next shot here in episode 8 of Don&#8217;t Call it Frisco!</p>
-
-            <a href="../wrap/index.html">read more</a> &rarr;
-
-            <div class="pad45"></div>
-
-          </div>
-          <div id="post-2333"
-            class="post-2333 post type-post status-publish format-image hentry category-vibrant-films-production-news post_format-post-format-image">
-
-            <h1 class="blog-title"><a href="../film-premiere-sri-lanka-cca/index.html">Film Premiere of Made in Sri
-                Lanka at CCA</a></h1>
-            <h6>April 3, 2018 - <a href="../category/vibrant-films-production-news/index.html"
-                rel="category tag">Vibrant Films production news</a></h6>
-            <p>We are proud to announce that the Made in Sri lanka film that vibrant films produced with Remake will
-              premiere at the California College of the Arts next Wednesday the 11th at 5pm. The showing is free!
-              &#8220;Made in Sri Lanka,&#8221; is a film that&#8230;</p>
-
-            <a href="../film-premiere-sri-lanka-cca/index.html">read more</a> &rarr;
-
-            <div class="pad45"></div>
-
-          </div>
-          <div id="post-2244"
-            class="post-2244 post type-post status-publish format-image hentry category-vibrant-films-production-news post_format-post-format-image">
-
-            <h1 class="blog-title"><a href="../call-frisco-season-2/index.html">Don&#8217;t Call it Frisco Season 2!</a>
-            </h1>
-            <h6>March 21, 2018 - <a href="../category/vibrant-films-production-news/index.html"
-                rel="category tag">Vibrant Films production news</a></h6>
-            <p>Sneak peaks from a scene with Sophia from episode 8 of our show: www.dontcallitfrisco.tv</p>
-
-            <a href="../call-frisco-season-2/index.html">read more</a> &rarr;
-
-            <div class="pad45"></div>
-
-          </div>
-
         </div>
         <!--/col-md-8-->
 
@@ -212,22 +43,11 @@ layout: default
             <div id="recent-posts-2" class="sidebox widget widget_recent_entries">
               <h6 class="widget-title">Recent Posts</h6>
               <ul>
+                {% for post in site.posts limit:5 %}
                 <li>
-                  <a href="../pearl-izumi-mini-doc/index.html">Pearl iZumi Mini Doc</a>
+                  <a href="{{ post.url }}">{{ post.title }}</a>
                 </li>
-                <li>
-                  <a href="../made-in-mexico-premiere/index.html">Made in Mexico Premiere</a>
-                </li>
-                <li>
-                  <a href="../mexico/index.html">Made in Mexico</a>
-                </li>
-                <li>
-                  <a href="../call-frisco-roku/index.html">Don&#8217;t Call it Frisco is now on Roku!</a>
-                </li>
-                <li>
-                  <a href="../call-frisco-season-2-premiere/index.html">Don&#8217;t Call it Frisco Season 2
-                    premiere!</a>
-                </li>
+                {% endfor %}
               </ul>
             </div>
             <div class="pad30"></div>
