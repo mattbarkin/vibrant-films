@@ -8,7 +8,7 @@
                             {% assign directorWorkByPriority = site.director | sort:"priority" | reverse %} 
                             {% for directorWork in directorWorkByPriority %}
 
-                            <a href="{{directorWork.permalink}}" data-poster="{{directorWork.thumbnailImage}}" data-id="2"> 
+                            <a href="{{directorWork.permalink}}" data-src="{{directorWork.permalink}}"> 
                                 <div class="col-sm-6" style="padding:0;">
                                     <div class="director-image" style="background-image: url({{ directorWork.thumbnailImage }});">
                                         <p>{{ directorWork.title }}</p>
