@@ -19,8 +19,8 @@ collections:
           widget: select,
           options:
             [
-              { label: "Dan Urbanowicz", value: dan_urbanowicz },
-              { label: "John Doe", value: john_doe },
+              { label: "Matt Barkin", value: matt_barkin },
+              { label: "Nicolas Funke", value: nicolas_funke },
             ],
         }
       - {
@@ -29,14 +29,14 @@ collections:
           widget: datetime,
           format: "YYYY-MM-DD HH:MM:SS",
         }
-      - {
-          label: "Intro Paragraph",
-          name: intro_paragraph,
-          widget: markdown,
-          required: false,
-        }
       - { label: Body, name: body, widget: markdown, required: false }
-      - { label: Categories, name: categories, widget: string, required: false }
+      - {
+          label: Categories,
+          name: categories,
+          widget: select,
+          options:
+            [Vibrant Films production news, Blog, Film news, Talking shop],
+        }
   - name: work
     label: Work
     folder: _work
