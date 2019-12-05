@@ -73,7 +73,7 @@ collections:
           widget: "image",
           default: "/assets/img/uploads/default-thumbnail.jpg",
         }
-    - name: "director"
+  - name: "director"
       label: "Director"
       folder: "_director"
       create: true
