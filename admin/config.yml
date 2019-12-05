@@ -10,7 +10,7 @@ collections:
   # POSTS
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Post" # Used in the UI, ie.: "New Post"
-    folder: "_data/_posts" # The path to the folder where the documents are stored
+    folder: "_posts" # The path to the folder where the documents are stored
     sort: "date:desc" # Default is title:asc
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -44,7 +44,7 @@ collections:
         }
   - name: "work"
     label: "Work"
-    folder: "_data/_work"
+    folder: "_work"
     create: true
     slug: "{{slug}}"
     fields:
@@ -75,7 +75,7 @@ collections:
         }
     - name: "director"
       label: "Director"
-      folder: "_data/_director"
+      folder: "_director"
       create: true
       slug: "{{slug}}"
       fields:

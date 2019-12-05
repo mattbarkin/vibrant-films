@@ -77,11 +77,3 @@ collections:
     output: false
   director:
     output: false
-
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      section: "post"

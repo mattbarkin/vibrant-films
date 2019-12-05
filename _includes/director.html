@@ -10,7 +10,7 @@
 
                     <div id="grid-container3" class="cbp-l-grid-projects">
                         <ul>
-                            {% assign workByPriority = site.work | sort:"priority" | reverse %} 
+                            {% assign workByPriority = site.director | sort:"priority" | reverse %} 
                             {% for work in workByPriority %}
 
                             <li class="cbp-item {{ work.tag }}">
