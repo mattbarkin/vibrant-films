@@ -1,156 +1,153 @@
 backend:
-  name: git-gateway # Netlify’s Git Gateway connects to Git provider’s API
-  branch: master # Branch to update (master by default)
-
-media_folder: "assets/img/uploads" # Folder where user uploaded files should go
-
-publish_mode: editorial_workflow # Enable drafts
-
+  name: git-gateway
+  branch: master
+media_folder: assets/img/uploads
+publish_mode: editorial_workflow
 collections:
-  # POSTS
-  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Post" # Used in the UI, ie.: "New Post"
-    folder: "_posts" # The path to the folder where the documents are stored
-    sort: "date:desc" # Default is title:asc
-    create: true # Allow users to create new documents in this collection
+  - name: post
+    label: Post
+    folder: _posts
+    sort: "date:desc"
+    create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields: # The fields each document in this collection have
-      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
-      - { label: "Title", name: "title", widget: "string", tagname: "h1" }
-      - label: "Author"
-        name: "author"
-        widget: "select"
-        options:
-          - { label: "Dan Urbanowicz", value: "dan_urbanowicz" }
-          - { label: "John Doe", value: "john_doe" }
+    fields:
+      - { label: Layout, name: layout, widget: hidden, default: post }
+      - { label: Title, name: title, widget: string, tagname: h1 }
+      - {
+          label: Author,
+          name: author,
+          widget: select,
+          options:
+            [
+              { label: "Dan Urbanowicz", value: dan_urbanowicz },
+              { label: "John Doe", value: john_doe },
+            ],
+        }
       - {
           label: "Publish Date",
-          name: "date",
-          widget: "datetime",
+          name: date,
+          widget: datetime,
           format: "YYYY-MM-DD HH:MM:SS",
         }
       - {
           label: "Intro Paragraph",
-          name: "intro_paragraph",
-          widget: "markdown",
+          name: intro_paragraph,
+          widget: markdown,
           required: false,
         }
-      - { label: "Body", name: "body", widget: "markdown", required: false }
-      - {
-          label: "Categories",
-          name: "categories",
-          widget: "string",
-          required: false,
-        }
-  - name: "work"
-    label: "Work"
-    folder: "_work"
+      - { label: Body, name: body, widget: markdown, required: false }
+      - { label: Categories, name: categories, widget: string, required: false }
+  - name: work
+    label: Work
+    folder: _work
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string", tagname: "h1" }
+      - { label: Title, name: title, widget: string, tagname: h1 }
       - {
-          label: "Priority",
-          name: "priority",
-          widget: "number",
+          label: Priority,
+          name: priority,
+          widget: number,
           default: 0,
           min: 0,
           max: 100,
           step: 1,
         }
-      - { label: "Vimeo Permalink", name: "permalink", widget: "string" }
+      - { label: "Vimeo Permalink", name: permalink, widget: string }
       - {
-          label: "Tag",
-          name: "tag",
-          widget: "select",
-          options:
-            ["advertisement", "corporate", "profile-documentary", "reel"],
+          label: Tag,
+          name: tag,
+          widget: select,
+          options: [advertisement, corporate, profile-documentary, reel],
         }
       - {
           label: "Thumbnail Image",
-          name: "thumbnailImage",
+          name: thumbnailImage,
           description: "must be 480x360",
-          widget: "image",
-          default: "/assets/img/uploads/default-thumbnail.jpg",
+          widget: image,
+          default: /assets/img/uploads/default-thumbnail.jpg,
         }
-  - name: "director"
-      label: "Director"
-      folder: "_director"
-      create: true
-      slug: "{{slug}}"
-      fields:
-        - { label: "Title", name: "title", widget: "string", tagname: "h1" }
-        - {
-            label: "Priority",
-            name: "priority",
-            widget: "number",
-            default: 0,
-            min: 0,
-            max: 100,
-            step: 1,
-          }
-        - { label: "Vimeo Permalink", name: "permalink", widget: "string" }
-        - {
-            label: "Thumbnail Image",
-            name: "thumbnailImage",
-            description: "must be 480x360",
-            widget: "image",
-            default: "/assets/img/uploads/default-thumbnail.jpg",
-          }
-  - label: "Content"
-    name: "content"
+  - name: director
+    label: Director
+    folder: _director
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string, tagname: h1 }
+      - {
+          label: Priority,
+          name: priority,
+          widget: number,
+          default: 0,
+          min: 0,
+          max: 100,
+          step: 1,
+        }
+      - { label: "Vimeo Permalink", name: permalink, widget: string }
+      - {
+          label: "Thumbnail Image",
+          name: thumbnailImage,
+          description: "must be 480x360",
+          widget: image,
+          default: /assets/img/uploads/default-thumbnail.jpg,
+        }
+  - label: Content
+    name: content
     files:
-      - label: "Content"
-        name: "content"
-        file: "_data/content.yml"
-        fields:
-          - { label: Title, name: title, widget: string }
-          - { label: Intro, name: intro, widget: string }
-          - { label: "Work Title", name: "workTitle", widget: "string" }
-          - { label: "Work Subtitle", name: "workSubTitle", widget: "string" }
-          - { label: "Director Title", name: "directorTitle", widget: "string" }
-          - {
-              label: "Director Subtitle",
-              name: "directorSubTitle",
-              widget: "string",
-            }
-          - { label: "What We Do", name: "whatWeDoTitle", widget: "string" }
-          - {
-              label: "What We Do Subtitle",
-              name: "whatWeDoSubTitle",
-              widget: "string",
-            }
-          - {
-              label: "Who We Are Title",
-              name: "whoWeAreTitle",
-              widget: "string",
-            }
-          - {
-              label: "Who We Are Subtitle",
-              name: "whoWeAreSubTitle",
-              widget: "string",
-            }
-          - { label: "Slideshow Text 1", name: slide1, widget: markdown }
-          - { label: "Slideshow Text 2", name: slide2, widget: markdown }
-          - { label: "Slideshow Text 3", name: slide3, widget: markdown }
-          - { label: "Slideshow Text 4", name: slide4, widget: markdown }
-          - { label: "Slideshow Text 5", name: slide5, widget: markdown }
-          - { label: "Slideshow Text 6", name: slide6, widget: markdown }
-          - { label: "Separator Text", name: "SeparatorText", widget: "string" }
-          - {
-              label: "Equipment Rentals Title",
-              name: "equipmentRentalsTitle",
-              widget: "string",
-            }
-
-          - {
-              label: "Equipment Rentals SubTitle",
-              name: "equipmentRentalsSubTitle",
-              widget: "string",
-            }
-          - { label: "Contact text", name: "contactText", widget: "string" }
-          - { label: "Address line 1", name: "address1", widget: "string" }
-          - { label: "Address line 2", name: "address2", widget: "string" }
-          - { label: "Address line 3", name: "address3", widget: "string" }
-          - { label: "Phone", name: "phone", widget: "string" }
-          - { label: "Email", name: "email", widget: "string" }
+      - {
+          label: Content,
+          name: content,
+          file: _data/content.yml,
+          fields:
+            [
+              { label: Title, name: title, widget: string },
+              { label: Intro, name: intro, widget: string },
+              { label: "Work Title", name: workTitle, widget: string },
+              { label: "Work Subtitle", name: workSubTitle, widget: string },
+              { label: "Director Title", name: directorTitle, widget: string },
+              {
+                label: "Director Subtitle",
+                name: directorSubTitle,
+                widget: string,
+              },
+              { label: "What We Do", name: whatWeDoTitle, widget: string },
+              {
+                label: "What We Do Subtitle",
+                name: whatWeDoSubTitle,
+                widget: string,
+              },
+              {
+                label: "Who We Are Title",
+                name: whoWeAreTitle,
+                widget: string,
+              },
+              {
+                label: "Who We Are Subtitle",
+                name: whoWeAreSubTitle,
+                widget: string,
+              },
+              { label: "Slideshow Text 1", name: slide1, widget: markdown },
+              { label: "Slideshow Text 2", name: slide2, widget: markdown },
+              { label: "Slideshow Text 3", name: slide3, widget: markdown },
+              { label: "Slideshow Text 4", name: slide4, widget: markdown },
+              { label: "Slideshow Text 5", name: slide5, widget: markdown },
+              { label: "Slideshow Text 6", name: slide6, widget: markdown },
+              { label: "Separator Text", name: SeparatorText, widget: string },
+              {
+                label: "Equipment Rentals Title",
+                name: equipmentRentalsTitle,
+                widget: string,
+              },
+              {
+                label: "Equipment Rentals SubTitle",
+                name: equipmentRentalsSubTitle,
+                widget: string,
+              },
+              { label: "Contact text", name: contactText, widget: string },
+              { label: "Address line 1", name: address1, widget: string },
+              { label: "Address line 2", name: address2, widget: string },
+              { label: "Address line 3", name: address3, widget: string },
+              { label: Phone, name: phone, widget: string },
+              { label: Email, name: email, widget: string },
+            ],
+        }
