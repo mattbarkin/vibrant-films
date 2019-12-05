@@ -75,6 +75,8 @@ exclude:
 collections:
   work:
     output: false
+  director:
+    output: false
 
 defaults:
   - scope:

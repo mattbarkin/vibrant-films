@@ -73,6 +73,30 @@ collections:
           widget: "image",
           default: "/assets/img/uploads/default-thumbnail.jpg",
         }
+    - name: "director"
+      label: "Director"
+      folder: "_data/_director"
+      create: true
+      slug: "{{slug}}"
+      fields:
+        - { label: "Title", name: "title", widget: "string", tagname: "h1" }
+        - {
+            label: "Priority",
+            name: "priority",
+            widget: "number",
+            default: 0,
+            min: 0,
+            max: 100,
+            step: 1,
+          }
+        - { label: "Vimeo Permalink", name: "permalink", widget: "string" }
+        - {
+            label: "Thumbnail Image",
+            name: "thumbnailImage",
+            description: "must be 480x360",
+            widget: "image",
+            default: "/assets/img/uploads/default-thumbnail.jpg",
+          }
   - label: "Content"
     name: "content"
     files:
