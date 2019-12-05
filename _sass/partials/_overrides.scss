@@ -11,3 +11,25 @@ ul.post-pagination {
         float: left;
     }
 }
+
+.director-image {
+    cursor             : pointer;
+    background-size    : cover;
+    background-position: center;
+    display            : flex;
+    height             : 250px;
+    justify-content    : center;
+    align-items        : center;
+    box-shadow         : #000;
+    transition         : all .3s ease-out;
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, .5) 1000px 100px 100px inset;
+    }
+
+    p {
+        color      : #fff;
+        text-align : center;
+        text-shadow: #000 0px 0px 25px;
+    }
+}
