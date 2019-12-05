@@ -33,20 +33,6 @@
   />
   <link
     rel="stylesheet"
-    id="jquery.prettyphoto-css"
-    href="/assets/vendor/plugins/wp-video-lightbox/css/prettyPhoto_ver=5.2.4.css"
-    type="text/css"
-    media="all"
-  />
-  <link
-    rel="stylesheet"
-    id="video-lightbox-css"
-    href="/assets/vendor/plugins/wp-video-lightbox/wp-video-lightbox_ver=5.2.4.css"
-    type="text/css"
-    media="all"
-  />
-  <link
-    rel="stylesheet"
     id="wp-block-library-css"
     href="/assets/css/block-library.css"
     type="text/css"
@@ -148,42 +134,6 @@
   ></script>
   <script
     type="text/javascript"
-    src="/assets/vendor/plugins/wp-video-lightbox/js/jquery.prettyPhoto.min_ver=3.1.6.js"
-  ></script>
-  <script type="text/javascript">
-    /* <![CDATA[ */
-    var vlpp_vars = {
-      prettyPhoto_rel: "wp-video-lightbox",
-      animation_speed: "fast",
-      slideshow: "5000",
-      autoplay_slideshow: "false",
-      opacity: "0.80",
-      show_title: "true",
-      allow_resize: "true",
-      allow_expand: "true",
-      default_width: "640",
-      default_height: "480",
-      counter_separator_label: "\/",
-      theme: "dark_square",
-      horizontal_padding: "20",
-      hideflash: "false",
-      wmode: "opaque",
-      autoplay: "true",
-      modal: "false",
-      deeplinking: "false",
-      overlay_gallery: "true",
-      overlay_gallery_max: "30",
-      keyboard_shortcuts: "true",
-      ie6_fallback: "true"
-    };
-    /* ]]> */
-  </script>
-  <script
-    type="text/javascript"
-    src="/assets/vendor/plugins/wp-video-lightbox/js/video-lightbox_ver=3.1.6.js"
-  ></script>
-  <script
-    type="text/javascript"
     src="/assets/vendor/VibrantFilms/js/custom.modernizr_ver=5.2.4.js"
   ></script>
   <script
@@ -192,29 +142,6 @@
   ></script>
   <link rel="https://api.w.org/" href="wp-json/index.json" />
   <link type="text/css" rel="stylesheet" href="/assets/vendor/plugins/lightgallery.js/dist/css/lightgallery.min.css" /> 
-  <script>
-    WP_VIDEO_LIGHTBOX_VERSION = "1.8.8";
-    WP_VID_LIGHTBOX_URL =
-      "https://www.vibrantfilms.com/assets/vendor/plugins/wp-video-lightbox";
-    function wpvl_paramReplace(name, string, value) {
-      // Find the param with regex
-      // Grab the first character in the returned string (should be ? or &)
-      // Replace our href string with our new value, passing on the name and delimeter
-
-      var re = new RegExp("[\?&]" + name + "=([^&#]*)");
-      var matches = re.exec(string);
-      var newString;
-
-      if (matches === null) {
-        // if there are no params, append the parameter
-        newString = string + "?" + name + "=" + value;
-      } else {
-        var delimeter = matches[0].charAt(0);
-        newString = string.replace(re, delimeter + name + "=" + value);
-      }
-      return newString;
-    }
-  </script>
 
   <style type="text/css">
     img#wpstats {

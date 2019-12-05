@@ -29,9 +29,9 @@
 <script type='text/javascript' src='/assets/vendor/VibrantFilms/js/plugins_ver=5.2.4.js'></script>
 <script type='text/javascript' src='/assets/vendor/VibrantFilms/js/scripts_ver=5.2.4.js'></script>
 <script type='text/javascript' src='/assets/vendor/VibrantFilms/js/main_ver=5.2.4.js'></script>
-<!-- <script type='text/javascript' src='/assets/vendor/plugins/lightgallery.js/dist/js/lightgallery.min.js'></script> -->
-<script type='text/javascript' src='https://cdn.jsdelivr.net/npm/lightgallery@1.6.12/dist/js/lightgallery.min.js'></script>
-<!-- <script type='text/javascript' src='/assets/vendor/plugins/lightgallery.js/dist/js/lg-hash.js'></script> -->
+<script type='text/javascript' src='/assets/vendor/plugins/lightgallery.js/dist/js/lightgallery.min.js'></script>
+<script type='text/javascript' src='/assets/vendor/plugins/lightgallery.js/dist/js/lg-hash.js'></script>
+<script type='text/javascript' src='/assets/vendor/plugins/lightgallery.js/dist/js/lg-video.min.js'></script>
 
 <script type='text/javascript'>
 </script>
@@ -41,8 +41,14 @@
         $('a[rel^="prettyPhoto"]').prettyPhoto();
     });
     jQuery(document).ready(function(){
-        jQuery('#director-gallery').lightGallery({
-            download: false
+        lightGallery(document.getElementById('director-gallery'), {
+            download: false,
+            galleryId: 'director'
+        })
+
+        lightGallery(document.getElementById('work-gallery'), {
+            download: false,
+            galleryId: 'work'
         })
     })
 </script>
