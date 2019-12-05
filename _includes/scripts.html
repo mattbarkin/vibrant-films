@@ -45,6 +45,10 @@
 
 <script type="text/javascript">
 jQuery(document).ready(function(){
-    lightGallery(document.getElementById('director-gallery')); 
+    lightGallery(document.getElementById('director-gallery'))
+    var directorGallery = document.getElementById('director-gallery')
+    directorGallery.addEventListener('onBeforeOpen', function(e){
+      alert('onBeforeOpen');
+}, false);
 })
 </script>
