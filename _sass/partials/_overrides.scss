@@ -1,0 +1,13 @@
+ul.post-pagination {
+    margin    : 0;
+    list-style: none;
+    padding   : 0;
+
+    .next {
+        float: right;
+    }
+
+    .prev {
+        float: left;
+    }
+}
