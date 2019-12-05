@@ -1,16 +1,6 @@
 jQuery(document).ready(function ($) {
 	
 	/**
-	 * Disable AJAX
-	 */
-	if( 1 == wp_data.disable_ajax ){
-		jQuery('.cbp-singlePage').click(function(){
-			window.location = jQuery(this).attr('href');
-			return false;
-		});
-	}
-	
-	/**
 	 * Mobile Detection
 	 */
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
@@ -145,22 +135,21 @@ jQuery(document).ready(function ($) {
         if ($header.hasClass('responsive-menu')) {
             $header.removeClass('responsive-menu');
         }
-    });
+	});
+	
+	/**
+	 * Initialize video galleries
+	 */
+	lightGallery(document.getElementById('director-gallery'), {
+		download: false,
+		galleryId: 'director'
+	})
+
+	lightGallery(document.getElementById('work-gallery'), {
+		download: false,
+		galleryId: 'work'
+	})
     
-    /**
-     * Slideshow
-     */
-    jQuery('.top-slider').flexslider({
-    	animation: "fade",
-    	directionNav:false,
-    	controlNav: false, 
-    	slideshowSpeed: 5000,
-    	animationSpeed: 600,
-    	initDelay: 0,         
-    	useCSS: true
-    });
-    
-    jQuery(".rotate").show();
     
 });
 
