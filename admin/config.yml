@@ -84,6 +84,12 @@ collections:
           - { label: Intro, name: intro, widget: string }
           - { label: "Work Title", name: "workTitle", widget: "string" }
           - { label: "Work Subtitle", name: "workSubTitle", widget: "string" }
+          - { label: "Director Title", name: "directorTitle", widget: "string" }
+          - {
+              label: "Director Subtitle",
+              name: "directorSubTitle",
+              widget: "string",
+            }
           - { label: "What We Do", name: "whatWeDoTitle", widget: "string" }
           - {
               label: "What We Do Subtitle",

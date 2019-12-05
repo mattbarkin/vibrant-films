@@ -1,0 +1,68 @@
+<div class="container"> 
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">{{ site.data.content.directorTitle }}</h1>
+                <div class="lead wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">{{ site.data.content.directorSubTitle | markdownify }}</div>
+            </div>
+            <div id="aq-block-1779-2" class="aq-block aq-block-aq_portfolio_block col-sm-12 aq-first ">
+
+                <div class="cbp-l-grid-project">
+
+                    <div id="grid-container3" class="cbp-l-grid-projects">
+                        <ul>
+                            {% assign workByPriority = site.work | sort:"priority" | reverse %} 
+                            {% for work in workByPriority %}
+
+                            <li class="cbp-item {{ work.tag }}">
+                                <div class="cbp-caption">
+
+                                    <div class="cbp-caption-defaultWrap">
+                                        <img width="480" height="360"
+                                            src="{{ work.thumbnailImage }}"
+                                            class="attachment-portfolio size-portfolio wp-post-image" alt=""
+                                            srcset="{{ work.thumbnailImage }} 1440w"
+                                            sizes="(max-width: 480px) 100vw, 480px" data-attachment-id="2602"
+                                            data-permalink="https://www.vibrantfilms.com/mexico/screen-shot-2018-12-10-at-2-12-10-pm/"
+                                            data-orig-file="{{ work.thumbnailImage }}"
+                                            data-orig-size="1909,1073" data-comments-opened="0"
+                                            data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}"
+                                            data-image-title="{{ work.title }}"
+                                            data-image-description=""
+                                            data-medium-file="{{ work.thumbnailImage }}"
+                                            data-large-file="{{ work.thumbnailImage }}" />
+                                    </div>
+
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-alignCenter">
+                                            <div class="cbp-l-caption-body">
+
+                                                <h5>{{ work.title }}</h5>
+                                                <a href="portfolio/mexico/index.html"
+                                                    class="cbp-singlePage cbp-l-caption-buttonLeft">
+                                                    <i class="fa fa-link"></i>
+                                                </a>
+
+                                                <a href="{{ work.permalink }}"
+                                                    class="cbp-lightbox cbp-l-caption-buttonRight"
+                                                    data-title="{{ work.title }}">
+                                                    <i class="fa fa-film"></i>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </li>
+                          </a>
+                          {% endfor %}
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="pad45"></div>
+
+            </div>
+        </div>
+    </div>
