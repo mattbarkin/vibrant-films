@@ -4,18 +4,19 @@
                 <h1 class="wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">{{ site.data.content.directorTitle }}</h1>
                 <div class="lead wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">{{ site.data.content.directorSubTitle | markdownify }}</div>
             </div>
-            
+            <div id="director-gallery">
                             {% assign directorWorkByPriority = site.director | sort:"priority" | reverse %} 
                             {% for directorWork in directorWorkByPriority %}
 
-                            <div class="col-sm-6" style="padding:0;">
-                                <div class="director-image" style="background-image: url({{ directorWork.thumbnailImage }});">
-                                    <p>{{ directorWork.title }}</p>
+                            <a href="{{directorWork.permalink}}" data-poster="{{directorWork.thumbnailImage}}"> 
+                                <div class="col-sm-6" style="padding:0;">
+                                    <div class="director-image" style="background-image: url({{ directorWork.thumbnailImage }});">
+                                        <p>{{ directorWork.title }}</p>
+                                    </div>
                                 </div>
-                            </div>
-                          </a>
+                            </a>
                           {% endfor %}
-                    
+                        </div>
                         <div class="pad45"></div>
                         
         </div>
