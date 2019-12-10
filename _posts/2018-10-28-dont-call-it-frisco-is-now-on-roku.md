@@ -4,6 +4,7 @@ title: don't call it frisco is now on roku!
 author: matt_barkin
 date: "2018-10-28 12:00:00"
 categories: misc
+thumbnailImage: /assets/img/uploads/default-thumbnail.jpg
 ---
 
 DCF, our award winning comedy web series, Is now on streaming on Roku on ZPTV!

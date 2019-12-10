@@ -4,6 +4,7 @@ title: made in mexico premiere
 author: matt_barkin
 date: "2019-06-18 12:00:00"
 categories: misc
+thumbnailImage: /assets/img/uploads/default-thumbnail.jpg
 ---
 
 Our short documentary premiered in SF, LA, and London this June!
