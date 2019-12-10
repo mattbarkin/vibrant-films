@@ -149,7 +149,8 @@ jQuery(document).ready(function ($) {
 
 	lightGallery(document.getElementById('work-gallery'), {
 		download: false,
-		galleryId: 'work'
+		galleryId: 'work',
+		videoMaxWidth: '1200px',
 	})
     
 });
