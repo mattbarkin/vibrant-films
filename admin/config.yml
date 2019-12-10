@@ -13,7 +13,6 @@ collections:
     fields:
       - { label: Layout, name: layout, widget: hidden, default: post }
       - { label: Title, name: title, widget: string, tagname: h1 }
-      - { label: Hide Title, name: hideTitle, widget: boolean }
       - {
           label: Author,
           name: author,
@@ -82,6 +81,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: Title, name: title, widget: string, tagname: h1 }
+      - { label: Display Title, name: displayTitle, widget: boolean }
       - {
           label: Priority,
           name: priority,
