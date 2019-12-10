@@ -13,6 +13,7 @@ collections:
     fields:
       - { label: Layout, name: layout, widget: hidden, default: post }
       - { label: Title, name: title, widget: string, tagname: h1 }
+      - { label: Hide Title, name: hideTitle, widget: boolean }
       - {
           label: Author,
           name: author,
