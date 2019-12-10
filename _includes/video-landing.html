@@ -1,33 +1,58 @@
-<section id="home" class="wallpapered video-section" data-wallpaper-options='{"source":{
+<section id="home" class="jquery-background-video-wrapper">
+<!-- data-wallpaper-options='{"source":{
         "webm":"{{ site.url }}/assets/video/Landing_Vibrant.webm",
         "mp4":"{{ site.url }}/assets/video/Landing_Vibrant.mp4",
         "ogg":"{{ site.url }}/assets/video/Landing_Vibrant.ogv",
-        "poster":"{{ site.url }}/assets/video/Landing_Vibrant.jpg"}}'>
-    <div class="video_overlay">
-        <div id="content">
+        "poster":"{{ site.url }}/assets/video/Landing_Vibrant.jpg"}}'> -->
 
-            <div class="wow bounceInDown animated text-center intro-logo" data-wow-duration="2s" data-wow-delay="0s">
-                <img src="{{ site.url }}/assets/img/uploads/VIBRANTFILMS_small.png" alt="logo" data-recalc-dims="1" />
-            </div>
+    <div class="video_overlay"></div>
+    <video autoplay loop muted data-bgvideo="true" poster="{{ site.url }}/assets/video/Landing_Vibrant.jpg" class="jquery-background-video"> 
+        <source src="{{ site.url }}/assets/video/Landing_Vibrant.webm" type="video/webm" />
+        <source src="{{ site.url }}/assets/video/Landing_Vibrant.mp4" type="video/mp4" />
+        <source src="{{ site.url }}/assets/video/Landing_Vibrant.ogv" type="video/ogg" />
+    </video>
 
-            <div class="byline wow slideInLeft pad45" data-wow-delay="3s">
-                {{ site.data.content.intro }}
-            </div>
+    <div id="content">
+      <div
+        class="wow bounceInDown animated text-center intro-logo"
+        data-wow-duration="2s"
+        data-wow-delay="0s"
+      >
+        <img
+          src="{{ site.url }}/assets/img/uploads/VIBRANTFILMS_small.png"
+          alt="logo"
+          data-recalc-dims="1"
+        />
+      </div>
 
-            <h1 class="text-rotator-fade wow bounceInDown" data-wow-duration="2s" data-wow-delay="3s">
-                <span class="rotate">
-                </span>
-            </h1>
+      <div class="byline wow slideInLeft pad45" data-wow-delay="3s">
+        {{ site.data.content.intro }}
+      </div>
 
-            <div class="name wow bounceInDown" data-wow-duration="3s" data-wow-delay="1s">
-                    {{ site.data.content.title }} </div>
+      <h1
+        class="text-rotator-fade wow bounceInDown"
+        data-wow-duration="2s"
+        data-wow-delay="3s"
+      >
+        <span class="rotate"> </span>
+      </h1>
 
-            <div class="text-center pad30">
-                <a href="#about" class="scroll" id="down-link">
-                    <i class="fa fa-caret-down fa-3x wow rotateIn" data-wow-duration="1s" data-wow-delay="1s"></i></a>
-            </div>
+      <div
+        class="name wow bounceInDown"
+        data-wow-duration="3s"
+        data-wow-delay="1s"
+      >
+        {{ site.data.content.title }}
+      </div>
 
-        </div>
+      <div class="text-center pad30">
+        <a href="#about" class="scroll" id="down-link">
+          <i
+            class="fa fa-caret-down fa-3x wow rotateIn"
+            data-wow-duration="1s"
+            data-wow-delay="1s"
+          ></i
+        ></a>
+      </div>
     </div>
-
 </section>

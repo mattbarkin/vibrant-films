@@ -150,7 +150,6 @@ jQuery(document).ready(function ($) {
 		galleryId: 'work'
 	})
     
-    
 });
 
 jQuery(window).load(function(){
