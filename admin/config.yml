@@ -37,6 +37,13 @@ collections:
           options:
             [Vibrant Films production news, Blog, Film news, Talking shop],
         }
+      - {
+          label: "Thumbnail Image",
+          name: thumbnailImage,
+          description: "must be 480x360",
+          widget: image,
+          default: /assets/img/uploads/default-thumbnail.jpg,
+        }
   - name: work
     label: Work
     folder: _work
