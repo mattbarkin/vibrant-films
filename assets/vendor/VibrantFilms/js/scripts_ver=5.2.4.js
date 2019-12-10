@@ -142,7 +142,9 @@ jQuery(document).ready(function ($) {
 	 */
 	lightGallery(document.getElementById('director-gallery'), {
 		download: false,
-		galleryId: 'director'
+		galleryId: 'director',
+		videoMaxWidth: '1200px',
+		youtubePlayerParams: { modestbranding: 1, showinfo: 0 }
 	})
 
 	lightGallery(document.getElementById('work-gallery'), {
