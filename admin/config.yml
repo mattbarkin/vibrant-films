@@ -5,7 +5,7 @@ media_folder: assets/img/uploads
 publish_mode: editorial_workflow
 collections:
   - name: post
-    label: Post
+    label: Blog
     folder: _posts
     sort: "date:desc"
     create: true
