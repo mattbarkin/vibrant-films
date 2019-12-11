@@ -57,7 +57,7 @@ collections:
           widget: number,
           default: 0,
           min: 0,
-          max: 100,
+          max: 1000,
           step: 1,
         }
       - { label: "Vimeo Permalink", name: permalink, widget: string }
@@ -88,7 +88,7 @@ collections:
           widget: number,
           default: 0,
           min: 0,
-          max: 100,
+          max: 1000,
           step: 1,
         }
       - { label: "Vimeo Permalink", name: permalink, widget: string }
