@@ -2,10 +2,11 @@
 layout: post
 title: made in mexico premiere
 author: matt_barkin
-date: "2019-06-18 12:00:00"
+date: '2019-06-18 12:00:00'
 categories: misc
-thumbnailImage: /assets/img/uploads/default-thumbnail.jpg
+thumbnailImage: /assets/img/uploads/screen-shot-2019-12-10-at-4.10.57-pm.png
 ---
+https://remake.world/films/made-in-mexico/
 
 Our short documentary premiered in SF, LA, and London this June!
 
