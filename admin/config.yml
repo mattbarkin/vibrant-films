@@ -1,8 +1,8 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: mattbarkin/vibrant-films
   branch: master
 media_folder: assets/img/uploads
-publish_mode: editorial_workflow
 collections:
   - name: post
     label: Blog
