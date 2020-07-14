@@ -4,7 +4,7 @@ title: Im Not the Man I Used to Be
 author: matt_barkin
 date: "2020-01-22"
 categories: Blog
-thumbnailImage: /assets/img/uploads/Screenshot 2020-01-22 at 11.46.17 AM.png
+thumbnailImage: /assets/img/uploads/Screenshot 2020-01-22 at 11.46.17 AM.jpg
 ---
 
 Im Not the Man I Used to Be is a short film by our Matt Barkin about Alzheimer's where the roles between father and son are reversed.
