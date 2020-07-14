@@ -16,7 +16,7 @@
 title: Vibrant Films
 email: matt@vibrantfilms.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Vibrant Films Creative Film Agency in San Francisco
+San Francisco Video Production - Vibrant Films
 baseurl: "" # the subpath of your site if applicable, e.g. /blog
 url: "https://vibrantfilms.netlify.com" # the base hostname & protocol for your site, e.g. https://example.com
 

@@ -1,35 +1,43 @@
 ul.post-pagination {
-    margin    : 0;
-    list-style: none;
-    padding   : 0;
+  margin: 0;
+  list-style: none;
+  padding: 0;
 
-    .next {
-        float: right;
-    }
+  .next {
+    float: right;
+  }
 
-    .prev {
-        float: left;
-    }
+  .prev {
+    float: left;
+  }
 }
 
 .director-image {
-    cursor             : pointer;
-    background-size    : cover;
-    background-position: center;
-    display            : flex;
-    height             : 250px;
-    justify-content    : center;
-    align-items        : center;
-    box-shadow         : #000;
-    transition         : all .3s ease-out;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  height: 250px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: #000;
+  transition: all 0.3s ease-out;
 
-    &:hover {
-        box-shadow: rgba(0, 0, 0, .5) 1000px 100px 100px inset;
-    }
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.5) 1000px 100px 100px inset;
+  }
 
-    p {
-        color      : #fff;
-        text-align : center;
-        text-shadow: #000 0px 0px 25px;
-    }
+  p {
+    color: #fff;
+    text-align: center;
+    text-shadow: #000 0px 0px 25px;
+  }
+  #logo h1 {
+    font-size: 18px;
+    letter-spacing: normal !important;
+    text-transform: capitalize;
+    line-height: initial;
+    display: inline-block;
+    margin: 10px 0;
+  }
 }
