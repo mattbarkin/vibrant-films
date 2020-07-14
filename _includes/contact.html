@@ -1,59 +1,140 @@
 <div class="container">
-    <div class="row">
-        <div class="col-sm-12">
-            <h1 class="wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">contact</h1>
-            <div class="lead wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">
-                {{ site.data.content.contactText | markdownify }}</div>
-        </div>
-        <div id="aq-block-1779-24" class="aq-block aq-block-aq_ebor_text_block col-sm-6 aq-first ">
-            <p>{{ site.data.content.address1}}<br>
-                {{ site.data.content.address2}}<br>
-                {{ site.data.content.address3}}<br>
-
-            </p>
-
-            <ul class="fa-ul">
-                <li><i class="fa-li fa fa-phone inverse"></i> <span class="inverse">{{ site.data.content.phone}}</span>
-                </li>
-                <li><i class="fa-li fa fa-envelope inverse"></i> <a href="mailto:#">{{ site.data.content.email}}</a>
-                </li>
-
-            </ul>
-
-            <ul class="social-icons">
-                <li class="wow fadeIn" data-wow-offset="80" data-wow-duration="2s">
-                    <a href="https://twitter.com/sfvibrantfilms"><i class="fa fa-twitter"></i></a>
-                </li>
-                <li class="wow fadeIn" data-wow-offset="80" data-wow-duration="2s" data-wow-delay="0.5s">
-                    <a href="https://www.facebook.com/vibrantfilms/"><i class="fa fa-facebook"></i></a>
-                </li>
-                <li class="wow fadeIn" data-wow-offset="80" data-wow-duration="2s" data-wow-delay="1s">
-                    <a href="https://www.linkedin.com/company/vibrant-films"><i class="fa fa-linkedin"></i></a>
-                </li>
-
-                <li class="wow fadeIn" data-wow-offset="80" data-wow-duration="2s" data-wow-delay="2s">
-                    <a href="https://www.instagram.com/mattbarkin/"><i class="fa fa-instagram"></i></a>
-                </li>
-
-            </ul>
-        </div>
-        <div class="col-sm-6">
-            <div role="form" class="contact-form" lang="en-US" dir="ltr">
-                <form name="contact" method="POST" data-netlify="true" netlify-honeypot="that-cool-field"
-                    novalidate="novalidate">
-                    <div style="display: none;">
-                        <label>Don’t fill this out if you're human: <input name="that-cool-field" /></label>
-                    </div>
-                    <p><span class="your-name"><input type="text" name="your-name" value="" size="40"
-                                aria-required="true" aria-invalid="false" placeholder="Name (Required)" /></span><br />
-                        <span><input type="email" name="your-email" value="" size="40" aria-required="true"
-                                aria-invalid="false" placeholder="Email (Required)" /></span><br />
-                        <span><input type="text" name="your-subject" value="" size="40" aria-required="true"
-                                aria-invalid="false" placeholder="Subject" /></span><br />
-                        <span class="your-message"><textarea name="your-message" cols="40" rows="10"
-                                aria-invalid="false"></textarea></span><input type="submit" value="Submit" /></p>
-                </form>
-            </div>
-        </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <h1
+        class="wow fadeInRightBig"
+        data-wow-offset="80"
+        data-wow-duration="2s"
+      >
+        contact
+      </h1>
+      <div
+        class="lead wow fadeInRightBig"
+        data-wow-offset="80"
+        data-wow-duration="2s"
+      >
+        {{ site.data.content.contactText | markdownify }}
+      </div>
     </div>
+    <div
+      id="aq-block-1779-24"
+      class="aq-block aq-block-aq_ebor_text_block col-sm-6 aq-first"
+    >
+      <address>
+        <p>
+          {{ site.data.content.address1}}<br />
+          {{ site.data.content.address2}}<br />
+          {{ site.data.content.address3}}<br />
+        </p>
+
+        <ul class="fa-ul">
+          <li>
+            <i class="fa-li fa fa-phone inverse"></i>
+            <span class="inverse">{{ site.data.content.phone}}</span>
+          </li>
+          <li>
+            <i class="fa-li fa fa-envelope inverse"></i>
+            <a href="mailto:#">{{ site.data.content.email}}</a>
+          </li>
+        </ul>
+      </address>
+
+      <ul class="social-icons">
+        <li class="wow fadeIn" data-wow-offset="80" data-wow-duration="2s">
+          <a href="https://twitter.com/sfvibrantfilms"
+            ><i class="fa fa-twitter"></i
+          ></a>
+        </li>
+        <li
+          class="wow fadeIn"
+          data-wow-offset="80"
+          data-wow-duration="2s"
+          data-wow-delay="0.5s"
+        >
+          <a href="https://www.facebook.com/vibrantfilms/"
+            ><i class="fa fa-facebook"></i
+          ></a>
+        </li>
+        <li
+          class="wow fadeIn"
+          data-wow-offset="80"
+          data-wow-duration="2s"
+          data-wow-delay="1s"
+        >
+          <a href="https://www.linkedin.com/company/vibrant-films"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+        </li>
+
+        <li
+          class="wow fadeIn"
+          data-wow-offset="80"
+          data-wow-duration="2s"
+          data-wow-delay="2s"
+        >
+          <a href="https://www.instagram.com/mattbarkin/"
+            ><i class="fa fa-instagram"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-6">
+      <div role="form" class="contact-form" lang="en-US" dir="ltr">
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="that-cool-field"
+          novalidate="novalidate"
+        >
+          <div style="display: none;">
+            <label
+              >Don’t fill this out if you're human:
+              <input name="that-cool-field"
+            /></label>
+          </div>
+          <p>
+            <span class="your-name"
+              ><input
+                type="text"
+                name="your-name"
+                value=""
+                size="40"
+                aria-required="true"
+                aria-invalid="false"
+                placeholder="Name (Required)" /></span
+            ><br />
+            <span
+              ><input
+                type="email"
+                name="your-email"
+                value=""
+                size="40"
+                aria-required="true"
+                aria-invalid="false"
+                placeholder="Email (Required)" /></span
+            ><br />
+            <span
+              ><input
+                type="text"
+                name="your-subject"
+                value=""
+                size="40"
+                aria-required="true"
+                aria-invalid="false"
+                placeholder="Subject" /></span
+            ><br />
+            <span class="your-message">
+              <textarea
+                name="your-message"
+                cols="40"
+                rows="10"
+                aria-invalid="false"
+              ></textarea></span
+            ><input type="submit" value="Submit" />
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>

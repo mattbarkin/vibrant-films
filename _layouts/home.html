@@ -1,36 +1,42 @@
 ---
 layout: default
 ---
-<div id="aq-block-1793-1" class="aq-block aq-block-aq_header_block col-sm-12 aq-first ">
+
+<div
+  id="aq-block-1793-1"
+  class="aq-block aq-block-aq_header_block col-sm-12 aq-first"
+>
   {% include video-landing.html %}
 </div>
 
-<section id="work" class="page-section light-wrapper">
-  {% include work.html %}
-</section>
+<div id="delay-load" style="display: none;">
+  <section id="work" class="page-section light-wrapper">
+    {% include work.html %}
+  </section>
 
-<section id="who-we-are" class="page-section light-wrapper">
-  {% include who-we-are.html %}
-</section>
+  <section id="who-we-are" class="page-section light-wrapper">
+    {% include who-we-are.html %}
+  </section>
 
-<section id="what-we-do" class="page-section light-wrapper">
-  {% include what-we-do.html %}
-</section>
+  <section id="what-we-do" class="page-section light-wrapper">
+    {% include what-we-do.html %}
+  </section>
 
-<section id="director" class="page-section light-wrapper">
-  {% include director.html %}
-</section>
+  <section id="director" class="page-section light-wrapper">
+    {% include director.html %}
+  </section>
 
-<section id="matt" class="parallax">
-  {% include separator-photo.html %}
-</section>
+  <section id="matt" class="parallax">
+    {% include separator-photo.html %}
+  </section>
 
-<section id="equipment-rentals" class="page-section light-wrapper">
-  {% include equipment-rentals.html %}
-</section>
+  <section id="equipment-rentals" class="page-section light-wrapper">
+    {% include equipment-rentals.html %}
+  </section>
 
-{% include separator-video.html %}
+  {% include separator-video.html %}
 
-<section id="blog" class="page-section light-wrapper">
-  {% include blog.html %}
-</section>
+  <section id="blog" class="page-section light-wrapper">
+    {% include blog.html %}
+  </section>
+</div>
