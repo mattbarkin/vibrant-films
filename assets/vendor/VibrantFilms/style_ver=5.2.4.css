@@ -342,63 +342,6 @@ p {
 }
 /*--------------------------------*/
 
-/*	PRELOADER
-/*--------------------------------*/
- body.royal_loader {
-	background: none!important;
-	visibility: hidden!important;
-}
-#royal_preloader {
-	visibility: visible;
-	position: fixed;
-	top: 0px;
-	right: 0px;
-	bottom: 0px;
-	left: 0px;
-	z-index: 9999999999;
-	-webkit-transition: opacity 0.2s linear 0.8s;
-	-moz-transition: opacity 0.2s linear 0.8s;
-	-ms-transition: opacity 0.2s linear 0.8s;
-	-o-transition: opacity 0.2s linear 0.8s;
-	transition: opacity 0.2s linear 0.8s;
-}
-#royal_preloader.complete {
-	opacity: 0;
-}
-#royal_preloader .background {
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	background-color: #2E3138!important;
-	-webkit-transition: background 0.5s linear;
-	-moz-transition: background 0.5s linear;
-	-ms-transition: background 0.5s linear;
-	-o-transition: background 0.5s linear;
-	transition: background 0.5s linear;
-}
-#royal_preloader.number .percentage {
-	color: #646E7C;
-	background: transparent;
-	font-family:'Lato', sans-serif;
-	text-align: center;
-	margin: -90px 0px 0px -90px;
-	background-image: url('img/loader.gif');
-	background-repeat: no-repeat;
-	background-position: 50% 0;
-	padding-top: 110px;
-	width: 180px;
-	position: absolute;
-	font-size: 25px;
-	top: 50%;
-	left: 50%;
-	-webkit-transition: all 0.3s linear 0.5s;
-	-moz-transition: all 0.3s linear 0.5s;
-	-ms-transition: all 0.3s linear 0.5s;
-	-o-transition: all 0.3s linear 0.5s;
-	transition: all 0.3s linear 0.5s;
-}
 /*-----------------------------------------------------------------------------------*/
 
 /*	02: MENU
