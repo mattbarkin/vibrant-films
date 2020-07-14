@@ -1,3 +1,6 @@
+---
+layout: null
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -17,111 +20,15 @@
   <lastmod>2020-07-14T16:03:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-<url>
-  <loc>https://www.vibrantfilms.com/blog/im-not-the-man-i-used-to-be</loc>
-  <lastmod>2020-07-14T16:03:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.vibrantfilms.com/blog/pearl-izumi-mini-doc</loc>
-  <lastmod>2020-07-14T16:03:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.vibrantfilms.com/blog/made-in-mexico-premiere</loc>
-  <lastmod>2020-07-14T16:03:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.vibrantfilms.com/blog/made-in-mexico</loc>
-  <lastmod>2020-07-14T16:03:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.vibrantfilms.com/blog/dont-call-it-frisco-is-now-on-roku</loc>
-  <lastmod>2020-07-14T16:03:36+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.vibrantfilms.com/blog/call-frisco-season-2-premiere</loc>
-  <lastmod>2020-07-14T16:03:36+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.vibrantfilms.com/blog/kaiser-team-picnic-spot</loc>
-  <lastmod>2020-07-14T16:03:36+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.vibrantfilms.com/blog/made-in-sri-lanka-documentary-launch</loc>
-  <lastmod>2020-07-14T16:03:36+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.vibrantfilms.com/blog/thats-a-wrap</loc>
-  <lastmod>2020-07-14T16:03:36+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.vibrantfilms.com/blog/film-premiere-sri-lanka-cca</loc>
-  <lastmod>2020-07-14T16:03:36+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.vibrantfilms.com/blog/call-frisco-season-2</loc>
-  <lastmod>2020-07-14T16:03:36+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.vibrantfilms.com/blog/kittyhawk-aero</loc>
-  <lastmod>2020-07-14T16:03:36+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.vibrantfilms.com/blog/remake-shoot-sri-lanka</loc>
-  <lastmod>2020-07-14T16:03:36+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.vibrantfilms.com/blog/holi-color-festival</loc>
-  <lastmod>2020-07-14T16:03:36+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.vibrantfilms.com/blog/remake-team</loc>
-  <lastmod>2020-07-14T16:03:36+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.vibrantfilms.com/blog/day-1-in-nepal-with-goodweave</loc>
-  <lastmod>2020-07-14T16:03:36+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.vibrantfilms.com/blog/a-smarter-way-to-search</loc>
-  <lastmod>2020-07-14T16:03:36+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.vibrantfilms.com/blog/in-the-company-of-thieves-episode-2</loc>
-  <lastmod>2020-07-14T16:03:36+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.vibrantfilms.com/blog/day-of-gluttony</loc>
-  <lastmod>2020-07-14T16:03:36+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.vibrantfilms.com/blog/awesome-capture-footage</loc>
-  <lastmod>2020-07-14T16:03:36+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.vibrantfilms.com/blog/brother-grand-music-video</loc>
-  <lastmod>2020-07-14T16:03:36+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
+  {% for post in site.posts %}
+    <url>
+      <loc>{{ site.url }}{{ post.url }}</loc>
+      <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.64</priority>
+    </url>
+  {% endfor %}
+</urlset>
 <url>
   <loc>https://www.vibrantfilms.com/index.html</loc>
   <lastmod>2020-07-14T16:03:36+00:00</lastmod>
