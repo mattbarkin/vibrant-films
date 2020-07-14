@@ -18,8 +18,13 @@
     {% if page.section == "home" %}{{ site.title }}{% else %}{{ page.title |
     default: site.title }}{% endif %}
   </title>
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}"> {% if
-  jekyll.environment == 'production' and site.analytics %} {% include
+  <link rel="preload" href="{{ "/assets/main.css" | relative_url }}" as="style"
+  onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript
+    ><link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}"
+    /></noscript
+  >
+  {% if jekyll.environment == 'production' and site.analytics %} {% include
   analytics.html %} {% endif %}
   <script
     async
@@ -31,25 +36,36 @@
 
   <link
     rel="stylesheet"
-    id="ebor-raleway-font-css"
-    href="https://fonts.googleapis.com/css?family=Raleway%3A300%2C400%2C700&amp;ver=5.2.4"
-    type="text/css"
-    media="all"
-  />
-  <link
-    rel="stylesheet"
     id="ebor-lato-font-css"
     href="https://fonts.googleapis.com/css?family=Lato%3A400%2C700&amp;ver=5.2.4"
     type="text/css"
     media="all"
   />
+
   <link
-    rel="stylesheet"
-    id="ebor-bootstrap-css"
-    href="/assets/vendor/VibrantFilms/css/bootstrap.min_ver=5.2.4.css"
-    type="text/css"
-    media="all"
+    rel="preload"
+    href="//fonts.googleapis.com/css?family=Raleway%3A300%2C400%2C700&amp;ver=5.2.4"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
   />
+  <noscript
+    ><link
+      rel="stylesheet"
+      href="//fonts.googleapis.com/css?family=Raleway%3A300%2C400%2C700&amp;ver=5.2.4"
+  /></noscript>
+
+  <link
+    rel="preload"
+    href="/assets/vendor/VibrantFilms/css/bootstrap.min_ver=5.2.4.css"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
+  />
+  <noscript
+    ><link
+      rel="stylesheet"
+      href="/assets/vendor/VibrantFilms/css/bootstrap.min_ver=5.2.4.css"
+  /></noscript>
+
   <link
     rel="stylesheet"
     id="ebor-style-css"
@@ -85,32 +101,12 @@
     type="text/css"
     media="all"
   />
-  <link
-    rel="stylesheet"
-    id="jquery-video"
-    href="/assets/vendor/plugins/jquery-video.js/jquery-video.css"
-    type="text/css"
-    media="all"
-  />
   <link rel="https://api.w.org/" href="wp-json/index.json" />
   <link
     type="text/css"
     rel="stylesheet"
     href="/assets/vendor/plugins/lightgallery.js/dist/css/lightgallery.min.css"
   />
-
-  <style type="text/css">
-    img#wpstats {
-      display: none;
-    }
-  </style>
-  <style type="text/css">
-    .recentcomments a {
-      display: inline !important;
-      padding: 0 !important;
-      margin: 0 !important;
-    }
-  </style>
 
   <style type="text/css">
     .colour {
@@ -267,6 +263,80 @@
       font-size: 20px;
       font-weight: 300;
       line-height: 27px;
+    }
+  </style>
+
+  <style>
+    .jquery-background-video-wrapper {
+      position: relative;
+      overflow: hidden;
+      background-position: center center;
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+    }
+    .jquery-background-video {
+      position: absolute;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      top: 50%;
+      left: 50%;
+      -o-object-fit: cover;
+      object-fit: cover;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+    /**
+ * Fade in videos
+ * Note the .js class - so non js users still
+ * see the video
+ */
+    .js .jquery-background-video {
+      opacity: 0;
+      -webkit-transition: opacity 300ms linear;
+      transition: opacity 300ms linear;
+    }
+    .js .jquery-background-video.is-visible {
+      opacity: 1;
+    }
+
+    /**
+ * Pause/play button
+ */
+    .jquery-background-video-pauseplay {
+      display: none;
+    }
+    .jquery-background-video-pauseplay span {
+      display: none;
+    }
+    .jquery-background-video-pauseplay:after,
+    .jquery-background-video-pauseplay:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+    .jquery-background-video-pauseplay.play:before {
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 15px solid #fff;
+    }
+    .jquery-background-video-pauseplay.pause:before,
+    .jquery-background-video-pauseplay.pause:after {
+      border-top: 10px solid #fff;
+      border-bottom: 10px solid #fff;
+      border-left: 5px solid #fff;
+    }
+    .jquery-background-video-pauseplay.pause:after {
+      left: 10px;
     }
   </style>
 
