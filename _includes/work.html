@@ -29,7 +29,21 @@
 									<div class="cbp-caption">
 
 										<div class="cbp-caption-defaultWrap">
-											<img width="480" height="360" src="{{ work.thumbnailImage }}"/>
+											<picture>
+												<source
+												  srcset="{{ work.thumbnailImage | replace: 'jpg', 'webp'  | replace: 'png', 'webp'}}"
+												  type="image/webp"
+												/>
+												<source
+												  srcset="{{ work.thumbnailImage }}"
+												  type="image/png"
+												/>
+												<img
+												  src="{{ work.thumbnailImage }}"
+												  alt="Vibrant Films Logo"
+												/>
+											  </picture>
+											<img width="480" height="360" src=""/>
 										</div>
 
 										<div class="cbp-caption-activeWrap">
