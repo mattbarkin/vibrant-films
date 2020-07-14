@@ -1,24 +1,16 @@
 <!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
 
-{% include head.html %}
+  <body class="home">
+    {% if page.layout == "blog" or page.layout == "post" %} {% include
+    header-blog.html %} {% else %} {% include header.html %} {% endif %} {{
+    content }}
 
-<body class="home">
-	{% if page.layout == "blog" or page.layout == "post" %}
-		{% include header-blog.html %}
-	{% else %}
-		{% include header.html %}
-	{% endif %}
+    <section id="contact" class="page-section colour-section">
+      {% include contact.html %}
+    </section>
 
-	{{ content }}
-
-	<section id="contact" class="page-section colour-section">
-		{% include contact.html %}
-	</section>
-
-	{% include footer.html %}
-
-	{% include scripts.html %}
-
-</body>
- 
+    {% include footer.html %} {% include scripts.html %}
+  </body>
 </html>
