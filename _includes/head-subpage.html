@@ -1,0 +1,408 @@
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="San Francisco video production for music videos, marketing or creative work. {{ page.content | truncate: 90 }}"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@sfvibrantfilms" />
+    <meta name="twitter:creator" content="@sfvibrantfilms" />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:title"
+      content="San Francisco Video Production: Vibrant Films"
+    />
+    <meta property="og:url" content="https://www.vibrantfilms.com/" />
+    <meta
+      property="og:site_name"
+      content="San Francisco Video Production: Vibrant Films"
+    />
+    <meta
+      property="og:image"
+      content="{{ site.url }}/assets/video/Landing_Vibrant.jpg"
+    />
+    <meta property="fb:app_id" content="https://www.facebook.com/vibrantfilms" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>
+      San Francisco Video Production: {{ page.title }}
+    </title>
+    <link rel="preload" href="{{ "/assets/main.css" | relative_url }}" as="style"
+    onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript
+      ><link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}"
+      /></noscript
+    >
+    {% if jekyll.environment == 'production' and site.analytics %} {% include
+    analytics.html %} {% endif %}
+  
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://s.w.org" />
+  
+    <link
+      rel="stylesheet"
+      id="ebor-lato-font-css"
+      href="https://fonts.googleapis.com/css?family=Lato%3A400%2C700&amp;ver=5.2.4"
+      type="text/css"
+      media="all"
+    />
+  
+    <link
+      rel="preload"
+      href="//fonts.googleapis.com/css?family=Raleway%3A300%2C400%2C700&amp;ver=5.2.4"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="//fonts.googleapis.com/css?family=Raleway%3A300%2C400%2C700&amp;ver=5.2.4"
+    /></noscript>
+  
+    <link
+      rel="preload"
+      href="/assets/vendor/VibrantFilms/css/bootstrap.min_ver=5.2.4.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="/assets/vendor/VibrantFilms/css/bootstrap.min_ver=5.2.4.css"
+    /></noscript>
+  
+    <link
+      rel="preload"
+      href="/assets/vendor/VibrantFilms/style_ver=5.2.4.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="/assets/vendor/VibrantFilms/style_ver=5.2.4.css"
+    /></noscript>
+  
+    <link
+      rel="preload"
+      href="/assets/vendor/VibrantFilms/css/animate_ver=5.2.4.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="/assets/vendor/VibrantFilms/css/animate_ver=5.2.4.css"
+    /></noscript>
+  
+    <link
+      rel="preload"
+      href="/assets/vendor/VibrantFilms/css/font-awesome.min_ver=5.2.4.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="/assets/vendor/VibrantFilms/css/font-awesome.min_ver=5.2.4.css"
+    /></noscript>
+  
+    <link
+      rel="preload"
+      href="/assets/vendor/VibrantFilms/css/owl.carousel_ver=5.2.4.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="/assets/vendor/VibrantFilms/css/owl.carousel_ver=5.2.4.css"
+    /></noscript>
+  
+    <link
+      rel="preload"
+      href="/assets/vendor/VibrantFilms/css/cubeportfolio.min_ver=5.2.4.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="/assets/vendor/VibrantFilms/css/cubeportfolio.min_ver=5.2.4.css"
+    /></noscript>
+  
+    <link
+      rel="preload"
+      href="/assets/vendor/plugins/lightgallery.js/dist/css/lightgallery.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="/assets/vendor/plugins/lightgallery.js/dist/css/lightgallery.min.css"
+    /></noscript>
+  
+    <style type="text/css">
+      .colour {
+        color: #db6a32;
+      }
+  
+      a {
+        color: #db6a32;
+      }
+      a:hover {
+        color: #333;
+      }
+  
+      ::selection {
+        background: #db6a32;
+        color: #fff;
+      }
+      ::-moz-selection {
+        background: #db6a32;
+        color: #fff;
+      }
+  
+      blockquote {
+        border-left: 4px solid #db6a32 !important;
+      }
+  
+      .btn,
+      #ajax-contact-form2 input[type="submit"] {
+        background-color: #db6a32 !important;
+      }
+      .btn-inverse:hover {
+        background-color: #db6a32 !important;
+      }
+  
+      #menu li a:hover,
+      #menu a:focus,
+      #menu a.active {
+        color: #db6a32 !important;
+        background-color: transparent;
+      }
+  
+      .colour-section {
+        color: #f0f0f0 !important;
+        background: #db6a32 !important;
+      }
+      .colour-section .lead,
+      .colour-section h1 {
+        color: #f0f0f0 !important;
+      }
+  
+      .footer a {
+        color: #db6a32 !important;
+      }
+      .footer a:hover {
+        color: #999 !important;
+      }
+  
+      /**** CIRCLE LINK ****/
+      .circle {
+        background: #db6a32 !important;
+      }
+      .circle:hover {
+        background: #2e3138 !important;
+      }
+  
+      /*  ---------------------------------------------------------------
+          SERVICE ICONS
+          --------------------------------------------------------------- */
+      .service {
+        background: #db6a32 !important;
+      }
+  
+      /*  ---------------------------------------------------------------
+          PROGRESS BARS/SKILL BARS
+          --------------------------------------------------------------- */
+      .bars-wrapper .progress-bar {
+        background: #db6a32 !important;
+      }
+  
+      /*  ---------------------------------------------------------------
+          TEAM ICONS
+          --------------------------------------------------------------- */
+      .hi-icon2 {
+        color: #db6a32 !important;
+      }
+      .hi-icon-effect-a .hi-icon2 {
+        box-shadow: 0 0 0 3px #db6a32 !important;
+      }
+      .no-touch .hi-icon-effect-a1 .hi-icon2:hover {
+        color: #db6a32 !important;
+      }
+      .hi-icon-effect-a .hi-icon2:after {
+        background: #db6a32 !important;
+        color: #db6a32 !important;
+      }
+  
+      /*  ---------------------------------------------------------------
+           HOVER CAPTIONS ( TEAM - VIEW PROFILE + WORK - VIEW BUTTONS 
+          --------------------------------------------------------------- */
+      .cbp-l-caption-buttonLeft:hover,
+      .cbp-l-caption-buttonRight:hover {
+        color: #fff !important;
+        background-color: #db6a32 !important;
+      }
+  
+      /*  ---------------------------------------------------------------
+        PORTFOLIO FILTERS
+          --------------------------------------------------------------- */
+      .cbp-l-filters-button .cbp-filter-item-active {
+        background-color: #db6a32 !important;
+        color: #fff !important;
+      }
+      .cbp-l-filters-button .cbp-filter-counter {
+        background-color: #db6a32 !important;
+        color: #fff !important;
+      }
+      .cbp-l-filters-button .cbp-filter-counter:before {
+        border-top: 4px solid #db6a32 !important;
+      }
+  
+      .nav-tabs .active a,
+      .nav-tabs a:hover,
+      .nav-tabs .active a:focus {
+        background-color: #db6a32 !important;
+      }
+  
+      .footer {
+        background: #2e3138;
+      }
+  
+      .price .amt {
+        font-size: 72px;
+        line-height: 62px;
+      }
+  
+      .dollar {
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 22px;
+        position: relative;
+        right: 3px;
+        top: 0;
+      }
+  
+      .price .amt {
+        font-size: 110px;
+        line-height: 84px;
+        display: none;
+      }
+  
+      .owl-item {
+        color: #666;
+        font-family: "Raleway", sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 27px;
+      }
+    </style>
+  
+    <style>
+      .jquery-background-video-wrapper {
+        position: relative;
+        overflow: hidden;
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+      }
+      .jquery-background-video {
+        position: absolute;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        top: 50%;
+        left: 50%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+      /**
+   * Fade in videos
+   * Note the .js class - so non js users still
+   * see the video
+   */
+      .js .jquery-background-video {
+        opacity: 0;
+        -webkit-transition: opacity 300ms linear;
+        transition: opacity 300ms linear;
+      }
+      .js .jquery-background-video.is-visible {
+        opacity: 1;
+      }
+  
+      /**
+   * Pause/play button
+   */
+      .jquery-background-video-pauseplay {
+        display: none;
+      }
+      .jquery-background-video-pauseplay span {
+        display: none;
+      }
+      .jquery-background-video-pauseplay:after,
+      .jquery-background-video-pauseplay:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+      }
+      .jquery-background-video-pauseplay.play:before {
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 15px solid #fff;
+      }
+      .jquery-background-video-pauseplay.pause:before,
+      .jquery-background-video-pauseplay.pause:after {
+        border-top: 10px solid #fff;
+        border-bottom: 10px solid #fff;
+        border-left: 5px solid #fff;
+      }
+      .jquery-background-video-pauseplay.pause:after {
+        left: 10px;
+      }
+      #logo h1 {
+        font-size: 18px;
+        letter-spacing: normal !important;
+        text-transform: capitalize;
+        line-height: initial;
+        display: inline-block;
+        margin: 10px 0;
+      }
+      @media only screen and (max-width: 1024px) {
+        #logo h1 {
+          font-size: 14px !important;
+          letter-spacing: normal !important;
+          text-transform: capitalize !important;
+          line-height: initial !important;
+          display: inline-block !important;
+          margin: 10px 0;
+        }
+      }
+    </style>
+  
+    <!--[if lt IE 9]>
+      <script
+        src="http://html5shim.googlecode.com/svn/trunk/html5.js"
+        type="text/javascript"
+      ></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  
