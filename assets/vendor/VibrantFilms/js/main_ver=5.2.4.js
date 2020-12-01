@@ -1,22 +1,22 @@
 jQuery(document).ready(function () {
-  jQuery("#delay-load").show();
+  jQuery('#delay-load').show();
 
   // TEAM
-  var gridContainer = jQuery("#grid-container,#grid-container2");
+  var gridContainer = jQuery('#grid-container,#grid-container2');
 
   gridContainer.cubeportfolio({
-    animationType: "sequentially",
+    animationType: 'sequentially',
     gapHorizontal: 0,
     gapVertical: 10,
-    gridAdjustment: "responsive",
-    caption: "zoom",
-    displayType: "sequentially ",
+    gridAdjustment: 'responsive',
+    caption: 'zoom',
+    displayType: 'sequentially ',
     displayTypeSpeed: 100,
-    lightboxDelegate: ".cbp-lightbox",
+    lightboxDelegate: '.cbp-lightbox',
     lightboxGallery: true,
-    lightboxTitleSrc: "data-title",
+    lightboxTitleSrc: 'data-title',
     lightboxShowCounter: true,
-    singlePageDelegate: ".cbp-singlePage",
+    singlePageDelegate: '.cbp-singlePage',
     singlePageDeeplinking: true,
     singlePageStickyNavigation: true,
     singlePageShowCounter: true,
@@ -25,38 +25,38 @@ jQuery(document).ready(function () {
       jQuery
         .ajax({
           url: url,
-          type: "GET",
-          dataType: "html",
+          type: 'GET',
+          dataType: 'html',
           timeout: 5000,
         })
         .done(function (result) {
-          result = jQuery(result).find("#single");
+          result = jQuery(result).find('#single');
           t.updateSinglePage(result);
         })
         .fail(function () {
-          t.updateSinglePage("Error! Please refresh the page!");
+          t.updateSinglePage('Error! Please refresh the page!');
         });
     },
   });
 
   // PORTFOLIO
-  var gridContainer = jQuery("#grid-container3"),
-    filtersContainer = jQuery("#filters-container");
+  var gridContainer = jQuery('#grid-container3'),
+    filtersContainer = jQuery('#filters-container');
 
   gridContainer.cubeportfolio({
-    defaultFilter: "*",
-    animationType: "flipOut",
+    defaultFilter: '*',
+    animationType: 'flipOut',
     gapHorizontal: -50,
     gapVertical: 20,
-    gridAdjustment: "responsive",
-    caption: "pushTop",
-    displayType: "sequentially",
+    gridAdjustment: 'responsive',
+    caption: 'pushTop',
+    displayType: 'sequentially',
     displayTypeSpeed: 100,
-    lightboxDelegate: ".cbp-lightbox",
+    lightboxDelegate: '.cbp-lightbox',
     lightboxGallery: true,
-    lightboxTitleSrc: "data-title",
+    lightboxTitleSrc: 'data-title',
     lightboxShowCounter: true,
-    singlePageDelegate: ".cbp-singlePage",
+    singlePageDelegate: '.cbp-singlePage',
     singlePageDeeplinking: true,
     singlePageStickyNavigation: true,
     singlePageShowCounter: true,
@@ -65,14 +65,14 @@ jQuery(document).ready(function () {
       jQuery
         .ajax({
           url: url,
-          type: "GET",
-          dataType: "html",
+          type: 'GET',
+          dataType: 'html',
           timeout: 5000,
         })
         .done(function (result) {
-          result = jQuery(result).find("#single");
+          result = jQuery(result).find('#single');
           t.updateSinglePage(result);
-          jQuery("#big").owlCarousel({
+          jQuery('#big').owlCarousel({
             navigation: false,
             slideSpeed: 300,
             paginationSpeed: 400,
@@ -81,42 +81,48 @@ jQuery(document).ready(function () {
           });
         })
         .fail(function () {
-          t.updateSinglePage("Error! Please refresh the page!");
+          t.updateSinglePage('Error! Please refresh the page!');
         });
     },
   });
 
-  if (jQuery("body").hasClass("mobile")) {
-    filtersContainer.on("click", ".cbp-filter-item", function (e) {
-      gridContainer.cubeportfolio("filter", jQuery(this).data("filter"));
-      jQuery(".cbp-filter-item").removeClass("cbp-filter-item-active");
-      jQuery(this).addClass("cbp-filter-item-active");
+  if (jQuery('body').hasClass('mobile')) {
+    filtersContainer.on('click', '.cbp-filter-item', function (e) {
+      gridContainer.cubeportfolio('filter', jQuery(this).data('filter'));
+      jQuery('.cbp-filter-item').removeClass('cbp-filter-item-active');
+      jQuery(this).addClass('cbp-filter-item-active');
     });
   } else {
     // add listener for filters click
-    filtersContainer.on("click", ".cbp-filter-item", function (e) {
+    filtersContainer.on('click', '.cbp-filter-item', function (e) {
       var me = jQuery(this),
         wrap;
       // get cubeportfolio data and check if is still animating (reposition) the items.
-      if (!jQuery.data(gridContainer[0], "cubeportfolio").isAnimating) {
-        if (filtersContainer.hasClass("cbp-l-filters-dropdown")) {
-          wrap = jQuery(".cbp-l-filters-dropdownWrap");
-          wrap.find(".cbp-filter-item").removeClass("cbp-filter-item-active");
-          wrap.find(".cbp-l-filters-dropdownHeader").text(me.text());
-          me.addClass("cbp-filter-item-active");
+      if (!jQuery.data(gridContainer[0], 'cubeportfolio').isAnimating) {
+        if (filtersContainer.hasClass('cbp-l-filters-dropdown')) {
+          wrap = jQuery('.cbp-l-filters-dropdownWrap');
+          wrap.find('.cbp-filter-item').removeClass('cbp-filter-item-active');
+          wrap.find('.cbp-l-filters-dropdownHeader').text(me.text());
+          me.addClass('cbp-filter-item-active');
         } else {
-          me.addClass("cbp-filter-item-active")
+          me.addClass('cbp-filter-item-active')
             .siblings()
-            .removeClass("cbp-filter-item-active");
+            .removeClass('cbp-filter-item-active');
         }
       }
       // filter the items
-      gridContainer.cubeportfolio("filter", me.data("filter"), function () {});
+      gridContainer.cubeportfolio('filter', me.data('filter'), function () {});
     });
     // activate counters
     gridContainer.cubeportfolio(
-      "showCounter",
-      filtersContainer.find(".cbp-filter-item")
+      'showCounter',
+      filtersContainer.find('.cbp-filter-item')
     );
   }
+
+  setTimeout(function () {
+    jQuery('#quote-modal').modal();
+  }, 4000);
+
+  jQuery('#quote-modal a[href="#full-project"]').tab('show');
 });
