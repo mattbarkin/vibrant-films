@@ -120,9 +120,45 @@ jQuery(document).ready(function () {
     );
   }
 
-  setTimeout(function () {
-    jQuery('#quote-modal').modal();
-  }, 4000);
+  // Load popup if it's the first time you load the website
+  if (
+    getCookie('isNewsletterPopupDisplayed') === false ||
+    getCookie('isNewsletterPopupDisplayed') === ''
+  ) {
+    initPopup();
+    setCookie('isNewsletterPopupDisplayed', 'true');
+  }
 
-  jQuery('#quote-modal a[href="#full-project"]').tab('show');
+  function initPopup() {
+    jQuery('#quote-modal a[href="#full-project"]').tab('show');
+    setTimeout(function () {
+      jQuery('#quote-modal').modal();
+    }, 4000);
+  }
+
+  function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    if (typeof exdays === 'undefined') {
+      exdays = 30;
+    }
+    d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+    var expires = 'expires=' + d.toUTCString();
+    document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/';
+  }
+
+  function getCookie(cname) {
+    var name = cname + '=';
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return '';
+  }
 });
