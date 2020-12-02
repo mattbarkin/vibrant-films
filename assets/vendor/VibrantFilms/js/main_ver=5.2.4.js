@@ -133,7 +133,7 @@ jQuery(document).ready(function () {
     jQuery('#quote-modal a[href="#full-project"]').tab('show');
     setTimeout(function () {
       jQuery('#quote-modal').modal();
-    }, 4000);
+    }, 10000);
   }
 
   function setCookie(cname, cvalue, exdays) {
