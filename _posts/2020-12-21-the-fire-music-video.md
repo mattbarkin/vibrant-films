@@ -12,4 +12,6 @@ The story behind the song is based on a great novel by Denis Johnson, Train Drea
 
 Watch it here!
 
-https://www.youtube.com/watch?v=5r47oC2anuI
+![](/assets/img/uploads/cut-7.00_05_28_08.still009.jpg)
+
+<https://www.youtube.com/watch?v=5r47oC2anuI>
