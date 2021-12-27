@@ -8,4 +8,4 @@ thumbnailImage: /assets/img/uploads/screen-shot-2021-12-18-at-12.45.11-pm.webp
 ---
 In the fall of 2021 Vibrant Films director, Matt Barkin worked with Kraken Cove productions to make a san francisco video production called "Hit the Road" HTR was a commercial for Grove, a subscription service that provides sustainable, safe, home products. 
 
-<iframe width="560" height="315" src="https://vimeo.com/manage/videos/632469825" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/632469825?h=c172fed37e" width="640" height="360" frameborder="0" allowfullscreen></iframe>
