@@ -1,5 +1,5 @@
 ---
-title: Directing Reel
+title: Reel
 displayTitle: true
 priority: 150
 permalink: https://vimeo.com/501246194/97bd24fcbd
