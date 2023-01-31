@@ -4,7 +4,7 @@ title: San Francisco Video Production services
 author: matt_barkin
 date: 2023-01-28
 categories: Vibrant Films production news
-thumbnailImage: /assets/img/uploads/default-thumbnail.jpg
+thumbnailImage: /assets/img/uploads/Cruise-icon@2x.png
 ---
 1. Editing
 2. GFX work
