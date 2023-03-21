@@ -7,3 +7,5 @@ categories: Blog
 thumbnailImage: /assets/img/uploads/default-thumbnail.jpg
 ---
 Now offering free phone consultations for your San Francisco Bay Area Video Production Services
+
+Email matt@vibrantfilms.com to schedule one now
