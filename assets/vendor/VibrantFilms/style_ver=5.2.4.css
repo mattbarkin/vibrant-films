@@ -866,6 +866,11 @@ p {
  section.wallpapered.video-section {
 	height:520px;
 }
+@media only screen and (max-width: 1024px) {
+	section.wallpapered.video-section {
+	  height: 680px !important;
+	}
+  }
 .wallpapered h2 {
 	font-size: 32px;
 	line-height: 45px;
