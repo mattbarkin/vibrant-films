@@ -46,3 +46,12 @@ ul.post-pagination {
   display: inline;
   margin: 0 10px 0 0;
 }
+
+.h1r {
+  font-size: 130px !important;
+  font-weight: 700;
+  color:rgba(0, 0, 0, 1);
+  @media screen and (max-width: 1024px) {
+    font-size: 60px !important;
+  }
+}
