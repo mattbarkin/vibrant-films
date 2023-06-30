@@ -7,19 +7,29 @@
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-          <h5 class="modal-title" id="exampleModalLabel">Get a quick FREE quote</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Start a quote</h5>
         </div>
         <div class="modal-body">
   
           <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item">
-              <a class="nav-link" id="full-project-tab" data-toggle="tab" href="#full-project" role="tab" aria-controls="full-project" aria-selected="false">Full Project</a>
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact-modal" role="tab" aria-controls="contact-modal" aria-selected="false">Service</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact-modal" role="tab" aria-controls="contact-modal" aria-selected="false">Service</a>
+              <a class="nav-link" id="full-project-tab" data-toggle="tab" href="#full-project" role="tab" aria-controls="full-project" aria-selected="false">Full Project</a>
             </li>
           </ul>
           <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade" id="contact-modal" role="tabpanel" aria-labelledby="contact-tab">
+              <form name="quote-service" method="POST" data-netlify="true">
+                  <h4>Describe your needs</h4>
+                  <textarea class="form-control" name="request" required></textarea>
+                  <h4>Email for quote</h4>
+                  <input type="email" class="form-control" name="email" required>
+                  <br/>
+                  <button type="submit" class="btn btn-primary">Send</button>
+              </form>
+          </div>
             <div class="tab-pane fade" id="full-project" role="tabpanel" aria-labelledby="full-project-tab" required>
                 <form name="quote-full-project" method="POST" data-netlify="true">
               <h4>Project Style</h4>
@@ -71,16 +81,7 @@
             </form>
   
             </div>
-            <div class="tab-pane fade" id="contact-modal" role="tabpanel" aria-labelledby="contact-tab">
-                <form name="quote-service" method="POST" data-netlify="true">
-                    <h4>Describe your needs</h4>
-                    <textarea class="form-control" name="request" required></textarea>
-                    <h4>Email for quote</h4>
-                    <input type="email" class="form-control" name="email" required>
-                    <br/>
-                    <button type="submit" class="btn btn-primary">Send</button>
-                </form>
-            </div>
+
           </div>
         </div>
       </div>
