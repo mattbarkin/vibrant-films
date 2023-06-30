@@ -130,7 +130,7 @@ jQuery(document).ready(function () {
   }
 
   function initPopup() {
-    jQuery('#quote-modal a[href="#full-project"]').tab('show');
+    jQuery('#quote-modal a[href="#contact-modal"]').tab('show');
     setTimeout(function () {
       jQuery('#quote-modal').modal();
     }, 10000);
