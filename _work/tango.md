@@ -1,6 +1,6 @@
 ---
 title: Tango
-priority: 200
+priority: 150
 permalink: https://vimeo.com/164770147
 tag: profile-documentary
 thumbnailImage: /assets/img/uploads/Tango.png
