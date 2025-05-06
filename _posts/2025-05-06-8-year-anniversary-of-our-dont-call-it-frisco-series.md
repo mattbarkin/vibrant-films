@@ -12,6 +12,6 @@ Don’t Call it Frisco was released 8 years ago. It's a web series that takes a 
 
 Check it out if you haven't seen it! If you don't laugh we'll give your money back. 
 
-https://www.youtube.com/@dontcallitfriscothewebseri3447
+<https://www.youtube.com/@dontcallitfriscothewebseri3447>
 
-![](/assets/img/uploads/dcf-banner-large.jpg)
+![](/assets/img/uploads/dcf-banner-fbook.png)
